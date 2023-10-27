@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Menü Organizasyonu"
+            >
+
+        </item>
+
+    </group>
+    <group>
+        <item
+            android:title="Cari İşlemeleri">
+            <menu>
+                <item
+                    android:id="@+id/tum_hesaplar"
+                    android:title="Tüm Hesaplar"
+                    android:icon="@drawable/ic_baseline_account_balance_24"></item>
+                <item
+                    android:title="Tahsilat Girişi"
+                    android:icon="@drawable/ic_baseline_collections_24"></item>
+                <item
+                    android:title="Ödeme Girişi"
+                    android:icon="@drawable/ic_baseline_payment_24"></item>
+
+            </menu>
+        </item>
+    </group>
+
+    <group>
+
+<item
+    android:title="e-Fatura İşlemleri">
+
+            <menu>
+                <item
+                    android:icon="@drawable/ic_baseline_arrow_downward_24"
+                    android:title="Gelen Faturalar"></item>
+                <item
+                    android:icon="@drawable/ic_baseline_arrow_upward_24"
+                    android:title="Giden Faturalar"></item>
+                <item
+                    android:icon="@drawable/ic_baseline_settings_24"
+                    android:title="e-Fatura Sistem Ayarları"></item>
+                <item
+                    android:icon="@drawable/ic_baseline_cloud_upload_24"
+                    android:title="e-Fatura Kontör Yükle"></item>
+            </menu>
+</item>
+    </group>
+    <group>
+        <item
+            android:title="Ayarlar"
+
+            >
+            <menu>
+                <item
+                    android:icon="@drawable/ic_baseline_person_24"
+                    android:id="@+id/kullanicitanimlama"
+                    android:title="Kullanıcı Tanımlamaları"
+                   >
+
+                </item>
+            </menu>
+
+        </item>
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_onay_bekleyen"
+            android:icon="@drawable/ic_baseline_sms_24"
+            android:title="SMS Ayarları" >
+
+        </item>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_baseline_email_24"
+            android:title="Mail Ayarları" />
+         <item
+        android:id="@+id/nav_uye"
+        android:icon="@drawable/ic_baseline_post_add_24"
+        android:title="Sanal Pos Ayarları " />
+
+                <item
+                    android:id="@+id/nav_arac_takip"
+                    android:icon="@drawable/ic_baseline_bookmark_add_24"
+                    android:title=" Kampanya ve Duyurular" />
+                <item
+                    android:id="@+id/nav_personel_tanimla"
+                    android:icon="@drawable/ic_baseline_av_timer_24"
+                    android:title=" Zamanlı İşlemler" />
+
+
+
+
+        <item
+            android:icon="@drawable/ic_baseline_attach_money_24"
+            android:title="Satın Al"
+            ></item>
+    </group>
+
+</menu>

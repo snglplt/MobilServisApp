@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yeni_nav"
+    app:startDestination="@id/index_index">
+
+    <fragment
+        android:id="@+id/index_index"
+        android:name="com.example.tt.index_index"
+        android:label="fragment_index_index"
+        tools:layout="@layout/fragment_index_index" />
+    <fragment
+        android:id="@+id/acikkartlar"
+        android:name="com.example.tt.acikkartlar"
+        android:label="fragment_acikkartlar"
+        tools:layout="@layout/fragment_acikkartlar" />
+    <fragment
+        android:id="@+id/kartac"
+        android:name="com.example.tt.kartac"
+        android:label="fragment_kartac"
+        tools:layout="@layout/fragment_kartac" />
+</navigation>

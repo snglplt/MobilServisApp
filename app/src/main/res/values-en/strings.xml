@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pratik Hasar</string>
+    <string name="login">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="e_mail">Email</string>
+    <string name="register">Register</string>
+    <string name="Logo">LOGO</string>
+    <string name="Email">Email</string>
+    <string name="prompt">Choose a country</string>
+    <string name="menu">menu</string>
+    <string name="bugun_acilankartlar">Cards opened today</string>
+    <string name="search">Search...</string>
+    <string name="acilan_adet">Quantity Pop-up card </string>
+    <string name="acik_kartlar">Open Cards</string>
+    <string name="adet">Piece</string>
+    <string name="teslimi_geciken">Vehicles with Delayed Delivery</string>
+    <string name="onay_bekleyenler">"Awaiting Approval "</string>
+    <string name="username">Username</string>
+    <string name="parca_tedarik_bekleyen">Parts Procurement Pending</string>
+    <string name="parca_iscilik_bekleyen">Awaiting Part External Work</string>
+    <string name="teslime_hazir_araclar">Delivery Ready Vehicles</string>
+    <string name="date">Date</string>
+    <string name="kapali_kartlar">" Down Cards"</string>
+    <string name="mekanik_kart_ac">open mechanical admission card</string>
+    <string name="hasar_kart_ac">open a damage acceptance card</string>
+    <string name="kullanici_bulunamadi">" User not found"</string>
+    <string name="hasar_onarim_merkezi">Damage Repair Center</string>
+    <string name="kayit_formu">" REGISTRATION FORM"</string>
+    <string name="firma_tel_no">Company Phone Number</string>
+    <string name="yetkili_isim_soyisim">Authorized Name and Surname</string>
+    <string name="firma_unvan">" Company name"</string>
+    <string name="yetkili_tel_no">Authorized Phone Number</string>
+    <string name="hesap_var">Do you have an account?</string>
+    <string name="seciniz">Select</string>
+    <string name="mekanik_servis">"Mechanical Service "</string>
+    <string name="kaporta_boya_servis">"Body-Paint Service "</string>
+    <string name="hasar_onarim_servis">Damage Repair Center</string>
+    <string name="kayit_basarisiz">Registration Failed</string>
+    <string name="kayit_basarili">Registration Successful</string>
+    <string name="logo_secin">Please choose your logo!!!</string>
+    <string name="uyari">" WARNING"</string>
+    <string name="mail_format">Please enter username in email format!!!</string>
+    <string name="kullanici_var">"There is such a user "</string>
+    <string name="yazdir">Print</string>
+    <string name="kasatipi">" Case Type"</string>
+    <string name="istek_sikayet">REQUEST / COMPLAINT</string>
+    <string name="sahibi">"OWNER "</string>
+    <string name="sigorta">INSURANCE</string>
+    <string name="resim">PICTURE</string>
+    <string name="onarim">REPAIR</string>
+    <string name="durdur">stop</string>
+    <string name="unvan">degree</string>
+    <string name="vergino">Tax number</string>
+    <string name="adres">Address</string>
+    <string name="il">Province</string>
+    <string name="ilce">District</string>
+    <string name="tel">GSM</string>
+    <string name="stc">Driver Phone</string>
+    <string name="sad_soyad">D. Name/Surname</string>
+    <string name="bankaismi">Bank name</string>
+    <string name="iban">IBAN</string>
+    <string name="guncelle">UPDATE</string>
+    <string name="evet">Yes</string>
+    <string name="hayir">No</string>
+    <string name="kime">To Who?</string>
+    <string name="tumu">All</string>
+    <string name="secilen">Selected</string>
+    <string name="marka">Mark</string>
+    <string name="model">Model</string>
+    <string name="mesaj">Your mesaj...</string>
+    <string name="gonder">send</string>
+    <string name="smsgonder">Send Sms Form</string>
+    <string name="mailgonder">Send Mail Form</string>
+    <string name="verginogir">Tax number cannot be less than 10</string>
+    <string name="kartac">Open Card</string>
+    <string name="ilerle">next</string>
+    <string name="mailadresi">Mail Address</string>
+    <string name="mailsifresi">Mail Password</string>
+    <string name="smtpport">Smtp Port</string>
+    <string name="ssl">Sssl Tsl Port</string>
+    <string name="kaydet">SAVE</string>
+    <string name="logo_yazi">Next Generation</string>
+    <string name="logo_yazi2">Your Assistant</string>
+    <string name="kabulasmasi">ACCEPTANCE PHASE</string>
+    <string name="tespitresimleri">detection pictures</string>
+    <string name="modelversiyon">Model Version</string>
+    <string name="modelyili">Model Year</string>
+    <string name="renk">Color</string>
+    <string name="saseno">Chassis No</string>
+    <string name="motorno">Engine No</string>
+    <string name="konum">Location</string>
+    <string name="durum">Situation</string>
+    <string name="mua">Inspection End Date</string>
+    <string name="bakiye">Balance</string>
+    <string name="cariadi">" Current Name"</string>
+    <string name="borc">Debt</string>
+    <string name="alacak">Receivable</string>
+    <string name="aracbilgi">Vehicle Information</string>
+    <string name="aracturu">Vehicle Type</string>
+    <string name="plakano"> Number plate</string>
+    <string name="tutanaktipi">Record Type</string>
+    <string name="sigortalitipi">Insured Type</string>
+    <string name="policeturu">Policy Type</string>
+    <string name="sorumluadi">Responsible Name</string>
+    <string name="sorumlutel">Responsible Phone</string>
+    <string name="dosyano">File number</string>
+    <string name="ihbartarihi">Notification date</string>
+    <string name="kontroloradi">Controller Name</string>
+    <string name="kontrolortel">Controller  Phone</string>
+    <string name="sigortasirketi">Insurance company</string>
+    <string name="eksper">Expert</string>
+    <string name="bitmishali"> FINISHED CASE</string>
+    <string name="yapilacaklari">Things to do</string>
+    <string name="yaz">Write</string>
+    <string name="soyle">Talk</string>
+    <string name="ruhsat">Permit</string>
+    <string name="sagon">Right Front Side</string>
+    <string name="solon"> Left Front Side</string>
+    <string name="sagarka">Right Rear Side</string>
+    <string name="solarka">Left Rear Side</string>
+    <string name="olayyeri">CRIME SCENE</string>
+    <string name="stokiscilikno">Stock/L. No</string>
+    <string name="stokiscilikadi">Stock/L. Name</string>
+    <string name="miktar">Amount</string>
+    <string name="fiyat">Price</string>
+    <string name="ekle">add</string>
+    <string name="servistespit">SERVICE DETECTION </string>
+    <string name="evrak">Document</string>
+    <string name="yapimasamasi">construction phase</string>
+    <string name="stokno">Stock No</string>
+    <string name="toplam">Total</string>
+    <string name="aciklama">Explanation</string>
+    <string name="yapilacaklar">Things to do...</string>
+    <string name="sil">delete</string>
+    <string name="carislemleri">Current Accounts </string>
+    <string name="efaturaislemleri">e-Invoice Transactions</string>
+    <string name="ayarlar">Settings</string>
+    <string name="kampanyaduyuru">Campaign and Announcements</string>
+    <string name="zamanliislemler">Timed Transactions</string>
+    <string name="satinal">Buy</string>
+    <string name="tumhesaplar"> All Accounts</string>
+    <string name="cariekleduzenle">Add/Edit Current</string>
+    <string name="tahsilatgirisi"> Collection Entry</string>
+    <string name="odemegirisi">Payment Entry</string>
+    <string name="gelenfaturalar"> Incoming Invoices</string>
+    <string name="gidenfaturalar">Outgoing Invoices</string>
+    <string name="faturasistemayarlari">e-Invoice System Settings </string>
+    <string name="faturakontoryukleme"> e-Invoice Top Up</string>
+    <string name="menuayari">Menu Setting</string>
+    <string name="kullanicitanimlamalari"> User Definitions</string>
+    <string name="ustalisteleme"> Master Definitions</string>
+    <string name="smsayarlari">SMS Settings</string>
+    <string name="mailayarlari">Mail Settings</string>
+    <string name="sanalposayarlari">Virtual Pos Settings</string>
+    <string name="bakimzamanigelenler"> Maintenance Time</string>
+    <string name="muayaklasan">Inspection Upcoming </string>
+    <string name="egzozyaklasan">Exhaust Emission Upcoming </string>
+    <string name="trafiksigortasiyaklasan">Traffic Insurance Upcoming </string>
+    <string name="kaskosigortasiyaklasan">Motor Insurance Upcoming</string>
+    <string name="menusecin">Select Menu</string>
+    <string name="vergidairesi">Tax Administration </string>
+    <string name="odemeler"> Payments</string>
+    <string name="tarih">Date</string>
+    <string name="tutar">Amount</string>
+    <string name="caritanimlama">Current Description</string>
+    <string name="cariunvan">Current Title</string>
+    <string name="tel2">Phone</string>
+    <string name="GSM">GSM</string>
+    <string name="bankahavale">Credit card</string>
+    <string name="kredikarti">" Credit card"</string>
+    <string name="virman">Virman</string>
+    <string name="senet">bill</string>
+    <string name="cek">check</string>
+    <string name="nakit"> cash</string>
+    <string name="plaka">number plate</string>
+    <string name="odemetuttari">Payment total </string>
+    <string name="kredikartno"> Credit Card Number</string>
+    <string name="kartsahibiadi">Card Holder Name</string>
+    <string name="sonkullanimay">Last Use Month</string>
+    <string name="sonkullanimyil"> Last Year of Use</string>
+    <string name="sepet">Past Purchases</string>
+    <string name="gecmisalimlar">Past Purchases</string>
+    <string name="faturakes">Invoice</string>
+    <string name="faturaolustur">Invoice</string>
+    <string name="tumalanlar">Please fill in all fields</string>
+    <string name="islemyapilmayacak">No action will be taken</string>
+    <string name="kaporta">In the Body Section </string>
+    <string name="kartacildi">Open Crad</string>
+    <string name="kontrolasamasinda">In Control Phase</string>
+    <string name="merkezincelemede">Central Review</string>
+    <string name="monaybekliyor">M. Awaiting Approval</string>
+    <string name="onarimbitti">Repair Done</string>
+    <string name="onaylandi">Approved</string>
+    <string name="tedarikeksikgeldi">Supply Missing</string>
+    <string name="tedarikgeldi">Supply arrived</string>
+    <string name="pertedildi">Pert</string>
+    <string name="servisyogunlugu">Service Intensity</string>
+    <string name="sovtajsurecinde">In the Salvage Process</string>
+    <string name="tahkikat">Investigations</string>
+    <string name="devamediyor">Continues</string>
+    <string name="tedarikbekleniyor">Awaiting Supply</string>
+    <string name="temizlemede">in cleaning</string>
+    <string name="teslimehazir">Ready for Delivery</string>
+    <string name="tramerkusurlu">Tramer Defective</string>
+    <string name="tramerkusursuz">Tramer Perfect</string>
+    <string name="tramerbekleniyor">Tram Awaiting</string>
+    <string name="parcabekleniyor">Part Waiting</string>
+    <string name="yoneticionayinda">Manager Approval</string>
+    <string name="boyasirasinda">During Paint</string>
+    <string name="kaportasirasinda">During the Bodywork</string>
+    <string name="eonaybekliyor">E. Awaiting Approval</string>
+    <string name="islemsirasinda">During the Process</string>
+    <string name="teslimedildi">Was delivered</string>
+    <string name="boyandi">Painted</string>
+    <string name="toplamasirasinda">During Collection</string>
+    <string name="kapalikartlar">Closed Card</string>
+    <string name="kayitliaraclar">Registered Vehicles </string>
+    <string name="yagtablosu">Oil Chart</string>
+    <string name="stoktanimlama">Stock Identification</string>
+    <string name="stokadi">Stock Name</string>
+    <string name="listefiyati">List price</string>
+    <string name="pakettanimlama">Package Identification</string>
+    <string name="parabirimi">Currency</string>
+    <string name="paketadi">Package Name</string>
+    <string name="yilaraligi">Year Range</string>
+    <string name="parca">Piece</string>
+    <string name="iscilik">Workmanship</string>
+    <string name="stoktanseciniz">Choose From Stock </string>
+    <string name="paketgoster">Show Package</string>
+    <string name="tanimlamlamalar">Definitions</string>
+    <string name="tur">Type</string>
+    <string name="yedekparca">Parts</string>
+    <string name="stoklistesi">Stock List</string>
+    <string name="degistir">Change</string>
+    <string name="tamiret">Fix it</string>
+    <string name="ustatanimlama">Master Identification</string>
+    <string name="kurumsal">Institutional</string>
+    <string name="hakkimizda">About Us</string>
+    <string name="tc">TC Identification number</string>
+    <string name="ad">Name</string>
+    <string name="soyad">Last Name</string>
+    <string name="brans">Selected Branch</string>
+    <string name="parcaturu">Part Type</string>
+    <string name="parcay">Parts</string>
+    <string name="iscilikekle">Add Crafting </string>
+    <string name="izinler">Permission Settings</string>
+    <string name="cameraizni">Camera</string>
+    <string name="dosyaizni">File</string>
+    <string name="sesizni">Audio</string>
+    <string name="arama">Call</string>
+    <string name="depolama">Storage</string>
+    <string name="kullaniciguncelleme">User Update</string>
+    <string name="kamera">Camera</string>
+    <string name="galeri">Galery</string>
+    <string name="ses">Sound</string>
+    <string name="yazi">Text/Text</string>
+    <string name="kartikapat">Close Card</string>
+    <string name="kayitsilinsinmi">Is delete data ?</string>
+    <string name="kullanicilistele">User List</string>
+    <string name="ustasi">Masters</string>
+    <string name="resimgir">Please select car!..</string>
+    <string name="kayitdinizyapidi">You are registered, you can log in to the system.</string>
+    <string name="kartikaldir">Remove Card</string>
+    <string name="fiyatlandir">Price</string>
+    <string name="pakettenseciniz">Select Packet</string>
+    <string name="tel1">Phone</string>
+    <string name="ulke">Country</string>
+    <string name="lattitude">Lattitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="konumal">Get Location</string>
+    <string name="suankonum">Now Get Location</string>
+    <string name="konumgir">Location Save</string>
+    <string name="konumsoru">Where to Enter Location?</string>
+    <string name="konumlink">Enter Location Link</string>
+    <string name="konumkaydet">Save Location?</string>
+    <string name="adreskonum">Address:\t\t\t</string>
+    <string name="profil">Please select profile picture...</string>
+    <string name="fatura_ayari">Please select invoice settings...</string>
+    <string name="evrakturu">Document Type</string>
+    <string name="sevktarihi">Shipment date</string>
+    <string name="odemetarihi">Payment date</string>
+    <string name="kdv_turu">KDV Tip</string>
+    <string name="dahil">Including</string>
+    <string name="haric">Not Including</string>
+    <string name="yok">None</string>
+    <string name="evraktarihi">Document Date</string>
+    <string name="evrak_tipi">Document Tip</string>
+    <string name="e_fatura_tipi">e-Inovice Tip</string>
+    <string name="satis">SATIS</string>
+    <string name="iade">IADE</string>
+    <string name="tevkifat">TEVKIFAT</string>
+    <string name="istisna">ISTISNA</string>
+    <string name="iadeistisna">IADEISTISNA</string>
+    <string name="ozelmatrah">OZELMATRAH</string>
+    <string name="ihracatkayitli">IHRACKAYITLI</string>
+    <string name="alis">ALIS</string>
+    <string name="faturaolusturdu">Invoice has been created</string>
+    <string name="plakayazdir">Print Plate</string>
+    <string name="kmyazdir">Print Km </string>
+    <string name="noyazdir">Print No </string>
+    <string name="gidenfaturatarihi">Invoice date</string>
+    <string name="guncelemebasarili">Update Success</string>
+    <string name="silmebasarili">Delete Success</string>
+    <string name="gidenfaturakadu">Outgoing Invoice Code</string>
+    <string name="cari_sec">Select Current</string>
+    <string name="silinsinmi">Is Delete?</string>
+    <string name="vergino_sec">Select TaxNo</string>
+    <string name="plakasec">Enter plaka!..</string>
+    <string name="sec">Select</string>
+    <string name="zamanli">Working hour</string>
+    <string name="sigorta1">Insurance</string>
+    <string name="gorusuldu">Discussed</string>
+    <string name="gorusulmedi">Not Discussed</string>
+    <string name="gorusmesonuc">Interview Result</string>
+    <string name="kayitliustalar">Registered Masters</string>
+    <string name="tahsilat">Collection</string>
+    <string name="odeme">Payment</string>
+    <string name="adreslinki">Address Link</string>
+    <string name="gonderilmisfaturalar">Sent Invoices</string>
+    <string name="kadi">U. Name</string>
+    <string name="bransi">Brans</string>
+    <string name="teslimtarihi">Estimated delivery date</string>
+    <string name="aktarilmayan_faturalar">Untransferred Invoices</string>
+    <string name="reddedilen_faturalar">Reddedilen Faturalar</string>
+    <string name="fatura_pdf">Create pdf for invoice</string>
+    <string name="fatura_red">is cancelled invoice?</string>
+    <string name="tamam">OK</string>
+    <string name="fatura_kabul">Import invoice?</string>
+    <string name="fatura_rededilmistir">invoice cancelled</string>
+    <string name="mevcut_kontor">Your Current Credit Remains</string>
+    <string name="kontor_yukle">You are out of current credits. Load credits</string>
+    <string name="kayitlipaketyok">The registered package for this brand and model could not be found!..</string>
+    <string name="evrak_kodu">Document Code</string>
+    <string name="onaylanan_faturalar">Approved Invoices</string>
+    <string name="iceriaktar_faturalar">Import Invoice</string>
+    <string name="aktarilanlar_faturalar">Cancelled</string>
+    <string name="cikis">Log Out </string>
+
+    <string name="selpar_odeme">To use the system
+    You have to pay the amount stated above. In case of any problem 0850 304 26 06
+        You can get support from the phone number.</string>
+    <string name="ekspermail">Eksper Mail</string>
+    <string name="ekspertel">Eksper Phone</string>
+    <string name="eksperadres">Eksper Address</string>
+    <string name="kazatarihi">Accident Date</string>
+    <string name="policebitistarihi">Police End Date</string>
+    <string name="policeno">Police No</string>
+    <string name="ustatanimlidegil">Master not defined</string>
+    <string name="yapilacaklarigirin">Please enter what to do!..</string>
+    <string name="stok">Stock</string>
+    <string name="paket">Package</string>
+    <string name="stokseciniz">Your choice from stock!...</string>
+    <string name="kayitlistokyok">No registered stock of this brand and model has been found!..</string>
+    <string name="uygulamason">The application period has expired. Call 0 850 304 26 06 for communication.</string>
+    <string name="uygulama1">Application expiration date</string>
+    <string name="uygulama2">days left</string>
+    <string name="uygulama3">To extend the time, call 0 850 304 26 06</string>
+    <string name="plaka_bulunamadi">Plaka Not Found!..</string>
+    <string name="kayityok">Not Found!..</string>
+    <string name="birtaksit">1 Installment</string>
+    <string name="ikitaksit">2 Installment</string>
+    <string name="uctaksit">3 Installment</string>
+    <string name="dorttaksit">4 Installment</string>
+    <string name="bestaksit">5 Installment</string>
+    <string name="altitaksit">6 Installment</string>
+    <string name="yeditaksit">7 Installment</string>
+    <string name="sekiztaksit">8 Installment</string>
+    <string name="dokuztaksit">9 Installment</string>
+    <string name="ontaksit">10 Installment</string>
+    <string name="onbirtaksit">11 Installment</string>
+    <string name="onikitaksit">12 Installment</string>
+    <string name="cekilecektutar">Amount To Be Withdrawn</string>
+    <string name="yakitturu">Fuel Type</string>
+    <string name="benzin">Gasoline</string>
+    <string name="dizel">Diesel</string>
+    <string name="hybrit">Hybrit/Gasoline</string>
+    <string name="elektrik">Electric</string>
+    <string name="aracbilgisi">PLATE</string>
+    <string name="manuelfaturakes">Manual Invoice</string>
+    <string name="gelenmanuelfaturalar">Incoming Manual Invoices</string>
+    <string name="gonderilmismanuelfaturalar">Sent Manual Invoices</string>
+    <string name="eklemebasarili">Success Added</string>
+    <string name="tariharaligi">Date range</string>
+    <string name="baslangic">Start</string>
+    <string name="bitis">End</string>
+    <string name="sonucbulunamadi">Not Found Invoices.</string>
+    <string name="desc">Description</string>
+    <string name="rate">Rate</string>
+    <string name="qty">Qty</string>
+    <string name="saat">Hour</string>
+    <string name="para">$</string>
+    <string name="fatura_tutar">Invoice Total</string>
+    <string name="numara">Number</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

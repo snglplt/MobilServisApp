@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+
+    <TableRow
+        android:background="#dddddd"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tutanaktipi" />
+
+        <Spinner
+            android:id="@+id/spinner_tutanak_profili"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </TableRow>
+    <TableRow android:background="#F0F7F7" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sigortalitipi" />
+
+        <Spinner
+            android:id="@+id/spinner_sigorta_profili"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </TableRow>
+
+    <TableRow
+        android:background="#dddddd"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/policeturu" />
+
+        <Spinner
+            android:id="@+id/spinner_police_turu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </TableRow>
+    <TableRow android:background="#F0F7F7" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sorumluadi" />
+
+        <EditText
+            android:id="@+id/etdosyasorumlusuadi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:background="#dddddd"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sorumlutel" />
+
+        <EditText
+            android:id="@+id/etdosyasorumlutel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp" />
+
+    </TableRow>
+    <TableRow android:background="#F0F7F7" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dosyano" />
+
+        <EditText
+            android:id="@+id/etdosyano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:background="#dddddd"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ihbartarihi" />
+
+        <EditText
+            android:id="@+id/etihbartarihi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp" />
+
+    </TableRow>
+       <TableRow android:background="#F0F7F7" android:padding="5dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/eksper" />
+
+           <EditText
+               android:id="@+id/etsigortaeksperi"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textSize="14dp" />
+
+       </TableRow>
+       <TableRow
+           android:background="#dddddd"
+           android:padding="5dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/adres" />
+
+           <EditText
+               android:id="@+id/etadres"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textSize="14dp" />
+
+       </TableRow>
+
+       <TableRow android:background="#F0F7F7" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kontroloradi" />
+
+        <EditText
+            android:id="@+id/etkontroloradi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:background="#dddddd"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kontrolortel" />
+
+        <EditText
+            android:id="@+id/etkontrolortel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp" />
+
+    </TableRow>
+    <TableRow android:background="#F0F7F7" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sigortasirketi" />
+
+        <EditText
+            android:id="@+id/etsigortasirketi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:background="#dddddd"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btn_arac_bilgi_ilerle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="@string/guncelle"></Button>
+    </TableRow>
+
+
+</TableLayout>
+
+</ScrollView>
+</layout>

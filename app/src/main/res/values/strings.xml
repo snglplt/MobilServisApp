@@ -1,0 +1,722 @@
+<resources>
+    <string name="app_name">Pratik Hasar</string>
+    <string name="login">GİRİŞ YAP</string>
+    <string name="password">Şifre</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="e_mail">Email</string>
+    <string name="register">KAYIT OL</string>
+    <string name="Logo">Logo</string>
+    <string name="Email">Email</string>
+    <string name="prompt">Şehir seçin</string>
+    <string name="menu">Menü</string>
+    <string name="search">Ara</string>
+    <string name="bugun_acilankartlar">Bugün Açılan K</string>
+    <string name="acilan_adet">Adet Açılan kart</string>
+    <string name="acik_kartlar">Açık Kartlar</string>
+    <string name="adet">Adet</string>
+    <string name="teslimi_geciken">Teslimi Geciken Araçlar</string>
+    <string name="onay_bekleyenler">Onay Bekleyenler</string>
+    <string name="hello_blank_fragment">Onay Bekleyenler</string>
+    <string name="parca_tedarik_bekleyen">Parça Tedarik Bekleyenler</string>
+    <string name="parca_iscilik_bekleyen">Parça Dış İşçilik Bekleyen</string>
+    <string name="teslime_hazir_araclar">Teslime Hazır Araçlar</string>
+    <string name="date">Tarih</string>
+    <string name="kapali_kartlar">Kapalı Kartlar</string>
+    <string name="mekanik_kart_ac">mekanik kabul kartı aç</string>
+    <string name="hasar_kart_ac">hasar kabul kartı aç</string>
+    <string name="kullanici_bulunamadi">Kullanıcı Bulunamadı</string>
+    <string name="hasar_onarim_merkezi">Hasar Onarım Merkezi</string>
+    <string name="kayit_formu">KAYIT FORMU</string>
+    <string name="firma_tel_no">Firma Telefon Numarası</string>
+    <string name="yetkili_isim_soyisim">Yetkili İsim ve Soyisim</string>
+    <string name="firma_unvan">Firma Unvanı</string>
+    <string name="yetkili_tel_no">Yetkili Telefon Numarası</string>
+    <string name="hesap_var">Hesabınız mı var?</string>
+    <string name="seciniz">Seçiniz...</string>
+    <string name="mekanik_servis">Mekanik Servis</string>
+    <string name="kaporta_boya_servis">Kaporta-Boya Servisi</string>
+    <string name="hasar_onarim_servis">Hasar Onarim Merkezi</string>
+    <string name="kayit_basarisiz">Kayıt Başarısız</string>
+    <string name="kayit_basarili">Kayıt Başarılıdır</string>
+    <string name="logo_secin">Lütfen logo seciniz!!!</string>
+    <string name="uyari">UYARI</string>
+    <string name="mail_format">Lütfen email formatında kullanıcı adı giriniz!!!</string>
+    <string name="kullanici_var">Böyle bir kullanıcı var</string>
+    <string name="kullanici_oturum_acmis">Böyle bir kullanıcı var</string>
+    <string name="yazdir">Yazdır</string>
+    <string name="bitistarihi">Bitiş Tarihi </string>
+    <string name="kasatipi">Kasa Tipi</string>
+    <string name="istek_sikayet">İSTEK/ŞİKAYET</string>
+    <string name="sahibi">SAHİBİ</string>
+    <string name="sigorta">SİGORTA</string>
+    <string name="resim">RESİM</string>
+    <string name="onarim">ONARIM</string>
+    <string name="durdur">Durdur</string>
+    <string name="unvan">Unvan</string>
+    <string name="vergino">Vergi No</string>
+    <string name="adres">Adres</string>
+    <string name="il">İl</string>
+    <string name="ilce">İlçe</string>
+    <string name="tel">GSM</string>
+    <string name="stc">Sürücü Tel</string>
+    <string name="sad_soyad">S.Ad/Soyad</string>
+    <string name="bankaismi">Banka İsmi</string>
+    <string name="iban">IBAN</string>
+    <string name="guncelle">GÜNCELLE</string>
+    <string name="evet">EVET</string>
+    <string name="hayir">HAYIR</string>
+    <string name="kime">Kime?</string>
+    <string name="tumu">Tümü</string>
+    <string name="secilen">Seçilen</string>
+    <string name="marka">Marka</string>
+    <string name="model">Model</string>
+    <string name="mesaj">Mesajınız...</string>
+    <string name="gonder">Gönder</string>
+    <string name="smsgonder">Sms Gönderme Formu</string>
+    <string name="mailgonder">Mail Gönderme Formu</string>
+    <string name="verginogir">Vergi numarası 10dan küçük olamaz</string>
+    <string name="kartac">Kart Aç</string>
+    <string name="ilerle">İlerle</string>
+    <string name="mailadresi">Mail Adresiniz</string>
+    <string name="mailsifresi">Mail Şifresi</string>
+    <string name="smtpport">Smtp Port</string>
+    <string name="ssl">Ssl tsl Port</string>
+    <string name="kaydet">KAYDET</string>
+    <string name="logo_yazi">Yeni Nesil Dijital</string>
+    <string name="logo_yazi2">Asistanınız</string>
+    <string name="kabulasmasi">KABUL AŞAMASI</string>
+    <string name="tespitresimleri">tespit resimleri</string>
+    <string name="modelversiyon">Model Vers.</string>
+    <string name="modelyili">Model Yılı</string>
+    <string name="renk">Renk</string>
+    <string name="saseno">Şase No</string>
+    <string name="motorno">Motor No</string>
+    <string name="konum">Konum</string>
+    <string name="durum">Durum</string>
+    <string name="mua">Mua Bitiş Tarihi</string>
+    <string name="bakiye">Bakiye</string>
+    <string name="cariadi">Cari Adı</string>
+    <string name="borc">Borç</string>
+    <string name="alacak">Alacak</string>
+    <string name="aracbilgi">Araç Bilgisi</string>
+    <string name="aracturu">Araç Türü</string>
+    <string name="plakano">Plaka No</string>
+    <string name="tutanaktipi">Tutanak Tipi</string>
+    <string name="sigortalitipi">Sigortalı Tipi</string>
+    <string name="policeturu">Poliçe Türü</string>
+    <string name="sorumluadi">Sorumlu Adı</string>
+    <string name="sorumlutel">Sorumlu Tel</string>
+    <string name="dosyano">Dosya No</string>
+    <string name="ihbartarihi">İhbar tarihi</string>
+    <string name="kontroloradi">Kontrolör Adı</string>
+    <string name="kontrolortel">Kontrolör Tel</string>
+    <string name="sigortasirketi">Sigorta Şirketi</string>
+    <string name="eksper">Eksper Unvanı</string>
+    <string name="bitmishali">BİTMİŞ HALİ</string>
+    <string name="yapilacaklari">Yapılacakları</string>
+    <string name="yaz">Yaz</string>
+    <string name="soyle">Söyle</string>
+    <string name="ruhsat">Ruhsat</string>
+    <string name="sagon">Sağ Ön Taraf</string>
+    <string name="solon">Sol Ön Taraf</string>
+    <string name="sagarka">Sağ Arka Taraf</string>
+    <string name="solarka">Sol Arka Taraf</string>
+    <string name="olayyeri">OLAY YERİ</string>
+    <string name="stokiscilikno">Stok/İsc No</string>
+    <string name="stokiscilikadi">Stok/İsc. Adı</string>
+    <string name="miktar">Miktar</string>
+    <string name="fiyat">Fiyat </string>
+    <string name="ekle">ekle</string>
+    <string name="servistespit">SERVİS TESPİT</string>
+    <string name="evrak">Evrak</string>
+    <string name="yapimasamasi">yapım aşaması</string>
+    <string name="stokno">Stok No</string>
+    <string name="toplam">Toplam</string>
+    <string name="aciklama">Açıklama</string>
+    <string name="yapilacaklar">Yapılacaklar...</string>
+    <string name="sil">Sil</string>
+    <string name="carislemleri">Cari İşlemleri</string>
+    <string name="efaturaislemleri">e-Fatura İşlemleri</string>
+    <string name="ayarlar">Ayarlar</string>
+    <string name="kampanyaduyuru">Kampanya ve Duyurular</string>
+    <string name="zamanliislemler">Zamanlı İşlemeler</string>
+    <string name="satinal">Satın Al</string>
+    <string name="tumhesaplar">Tüm Hesaplar</string>
+    <string name="cariekleduzenle">Cari Ekle/Düzenle</string>
+    <string name="tahsilatgirisi">Tahsilat Girişi</string>
+    <string name="odemegirisi">Ödeme Girişi</string>
+    <string name="tahsilat">Tahsilat </string>
+    <string name="odeme">Ödeme </string>
+    <string name="gelenfaturalar">Gelen Faturalar</string>
+    <string name="gidenfaturalar">Giden Faturalar</string>
+    <string name="faturasistemayarlari">e- Fatura Sistem Ayarları</string>
+    <string name="faturakontoryukleme">e- Fatura Kontör Yükleme</string>
+    <string name="menuayari">Menu Ayarı</string>
+    <string name="kullanicitanimlamalari">Kullanıcı Tanımlamaları</string>
+    <string name="smsayarlari">SMS Ayarları</string>
+    <string name="mailayarlari">Mail Ayarları</string>
+    <string name="sanalposayarlari">Sanal Pos Ayarları</string>
+    <string name="bakimzamanigelenler">Bakım Zamanı Gelenler</string>
+    <string name="muayaklasan">Muayene Tarihi</string>
+    <string name="egzozyaklasan">Egzoz Emisyon Bitiş Tarihi</string>
+    <string name="trafiksigortasiyaklasan">Trafik Sigortası Bitiş Tarihi</string>
+    <string name="kaskosigortasiyaklasan">Kasko Sigortası Bitiş Tarihi</string>
+    <string name="menusecin">Menu seçin</string>
+    <string name="vergidairesi">Vergi Dairesi</string>
+    <string name="odemeler">Ödemeler</string>
+    <string name="tarih">Tarih</string>
+    <string name="tutar">Tutar</string>
+    <string name="caritanimlama">Cari Tanımlama</string>
+    <string name="cariunvan">Cari Unvan</string>
+    <string name="tel2">Tel</string>
+    <string name="GSM">GSM</string>
+    <string name="kredikarti">Kredi Kartı</string>
+    <string name="bankahavale">Banka Havale</string>
+    <string name="nakit">Nakit</string>
+    <string name="cek">Çek</string>
+    <string name="senet">Senet</string>
+    <string name="virman">Virman</string>
+    <string name="plaka">Plaka</string>
+    <string name="odemetuttari">Ödeme Tutarı</string>
+    <string name="kartsahibiadi">Kart Sahibinin Adı</string>
+    <string name="kredikartno">Kredi Kart Numarası</string>
+    <string name="sonkullanimay">Son Kullanım Ay</string>
+    <string name="sonkullanimyil">Son Kullanım Yıl</string>
+    <string name="gecmisalimlar">Geçmiş Alımlar</string>
+    <string name="sepet">Sepet</string>
+    <string name="aylik">Aylık 120 TL</string>
+    <string name="ucaylik">3 Ay 330 TL</string>
+    <string name="altiay">6 Ay 600 TL</string>
+    <string name="yillik">12 Ay 1080 TL</string>
+    <string name="aylikh">Aylık 200 TL</string>
+    <string name="ucaylikh">3 Ay 570 TL</string>
+    <string name="altiayh">6 Ay 1500 TL</string>
+    <string name="yillikh">12 Ay 1920 TL</string>
+    <string name="aylikhm">Aylık 330 TL</string>
+    <string name="ucaylikhm">3 Ay 930TL</string>
+    <string name="altiayhm">6 Ay 1740 TL</string>
+    <string name="yillikhm">12 Ay 3300 TL</string>
+    <string name="yüz">100 Kontör 85 TL</string>
+    <string name="ikiyuzelli">250 Kontör 175 TL</string>
+    <string name="besyuz">500 Kontör 300 TL</string>
+    <string name="bin">1000 Kontör 550 TL</string>
+    <string name="kullaniciadi">Kullanici Adi</string>
+    <string name="kullanici"> Adi</string>
+    <string name="sifre">Şifre</string>
+    <string name="kullanicisoyad">Soyad</string>
+    <string name="efaturasistemayarlari">E- Fatura Sistem Ayarları</string>
+    <string name="entegratorfirmasi">Entegratör</string>
+    <string name="entagratorkullanicikodu">Entegratör Kullanıcı Kodu:</string>
+    <string name="entagratorkullanicisifresi">Entegratör Kullanıcı Şifresi:</string>
+    <string name="efaturaseribaslangic">E-Fatura Seri Başlangıç:</string>
+    <string name="earsivseribaslangic">E-Arşiv Seri Başlangıç:</string>
+    <string name="eirsaliyeseribaslangic">E-İrsaliye Seri Başlangıç:</string>
+    <string name="efaturaetiketmaili">E-Fatura Etiket Maili:</string>
+    <string name="efaturaturu">E-Fatura Türü:</string>
+    <string name="faturakes">Fatura Kes</string>
+    <string name="faturaolustur">Fatura Oluştur</string>
+    <string name="tumalanlar">Lütfen tüm alanları doldurunuz!..</string>
+    <string name="islemyapilmayacak">İşlem Yapılmayacak</string>
+    <string name="kaporta">Kaporta Bölümünde</string>
+    <string name="kartacildi">Kart Açıldı</string>
+    <string name="kontrolasamasinda">Kontrol Aşamasında</string>
+    <string name="merkezincelemede">Merkez İncelemede</string>
+    <string name="monaybekliyor">M. Onay Bekliyor</string>
+    <string name="onarimbitti">Onarım Bitti</string>
+    <string name="onaylandi">Onaylandı</string>
+    <string name="tedarikeksikgeldi">Tedarik Eksik Geldi</string>
+    <string name="tedarikgeldi">Tedarik  Geldi</string>
+    <string name="pertedildi">Pert Edildi</string>
+    <string name="servisyogunlugu">Servis Yoğunluğu </string>
+    <string name="sovtajsurecinde">Sovtaj Sürecinde </string>
+    <string name="tahkikat">Tahkikat</string>
+    <string name="devamediyor">Devam Ediyor</string>
+    <string name="tedarikbekleniyor">Tedarik Bekleniyor</string>
+    <string name="temizlemede">Temizlemede </string>
+    <string name="teslimehazir">Teslime Hazır</string>
+    <string name="tramerkusurlu">Tramer Kusurlu </string>
+    <string name="tramerkusursuz">Tramer Kusursuz </string>
+    <string name="tramerbekleniyor">Tramer Bekleniyor </string>
+    <string name="parcabekleniyor">Parça Bekleniyor </string>
+    <string name="yoneticionayinda">Yönetici Onayında </string>
+    <string name="boyasirasinda">Boya Sırasında</string>
+    <string name="kaportasirasinda">Kaporta Sırasında</string>
+    <string name="eonaybekliyor">E. Onay Bekliyor</string>
+    <string name="islemsirasinda">İşlem Sırasında</string>
+    <string name="teslimedildi">Teslim Edildi </string>
+    <string name="boyandi">Boyandı</string>
+    <string name="toplamasirasinda">Toplama Sırasında</string>
+    <string name="kapalikartlar">Kapalı Kartlar</string>
+    <string name="kayitliaraclar">Kayıtlı Araçlar</string>
+    <string name="yagtablosu">Yağ Tablosu</string>
+    <string name="stoktanimlama">Stok Tanımlama</string>
+    <string name="stokadi">Stok Adı</string>
+    <string name="listefiyati">KDVli Liste Fiyatı</string>
+    <string name="pakettanimlama">Paket Tanımlama</string>
+    <string name="parabirimi">Para Birimi</string>
+    <string name="paketadi">Paket Adı</string>
+    <string name="yilaraligi">Yıl Aralığı</string>
+    <string name="parca">Parça</string>
+    <string name="iscilik">İşçilik</string>
+    <string name="stoktanseciniz">Stoktan Seçiniz</string>
+    <string name="paketgoster">Bakım Paketleri</string>
+    <string name="tanimlamlamalar">Tanımlamalar</string>
+    <string name="yedekparca">Yedek Parça</string>
+    <string name="tur">Türü</string>
+    <string name="stoklistesi">Stok Listesi</string>
+    <string name="degistir">Değiştir</string>
+    <string name="tamiret">Tamir Et</string>
+    <string name="ustatanimlama">Usta Tanımlama</string>
+    <string name="kurumsal">Kurumsal</string>
+    <string name="hakkimizda">Hakkımızda</string>
+    <string name="tc">T.C No</string>
+    <string name="soyad">Soyad</string>
+    <string name="kadi">K. Adi</string>
+    <string name="bransi">Branşı</string>
+    <string name="ad">Adı</string>
+    <string name="brans">Branş Seçiniz</string>
+    <string name="parcaturu">İşlem Türü</string>
+    <string name="parcay">Parca</string>
+    <string name="iscilikekle">İstek Yazı Ekle</string>
+    <string name="izinler">Program İzinleri</string>
+    <string name="cameraizni">Kamera</string>
+    <string name="dosyaizni">Dosya</string>
+    <string name="sesizni">Ses</string>
+    <string name="arama">Arama</string>
+    <string name="depolama">Depolama</string>
+    <string name="kullaniciguncelleme">Kullanıcı Güncelleme</string>
+    <string name="kamera">Kamera</string>
+    <string name="galeri">Galeri</string>
+    <string name="ses">Ses</string>
+    <string name="yazi">METİN/YAZI</string>
+    <string name="kartikapat">Kartı Kapat</string>
+    <string name="kayitsilinsinmi">Kayıt silinsin mi?</string>
+    <string name="kullanicilistele">Kullanıcı Listele</string>
+    <string name="ustasi">Ustası</string>
+    <string name="resimgir">Lütfen araç seçiniz!..</string>
+    <string name="kayitdinizyapidi">Kaydınız yapılmıştır sisteme giriş yapabilirsiniz.</string>
+    <string name="kartikaldir">Kartı Kaldır</string>
+    <string name="fiyatlandir">Fiyatlandır</string>
+    <string name="parcalari_gonder">Parçaları Gönder</string>
+    <string name="pakettenseciniz">Paketten Seçiniz</string>
+    <string name="tel1">Tel</string>
+    <string name="ulke">Ülke:\t\t\t</string>
+    <string name="lattitude">Enlem:\t\t\t </string>
+    <string name="longitude">Boylam:\t\t\t</string>
+    <string name="konumal">Konum Al</string>
+    <string name="suankonum">Şuanki Konumum Al</string>
+    <string name="konumgir">Konum Gir</string>
+    <string name="konumsoru">Konum Nereden Girilecek?</string>
+    <string name="konumlink">Konum Linkini Giriniz</string>
+    <string name="konumkaydet">Konum Kaydedilsin mi?</string>
+    <string name="adreskonum">Adres:\t\t\t</string>
+    <string name="profil">Lütfen profil resmi seçiniz...</string>
+    <string name="fatura_ayari">Lütfen fatura ayarlarını  seçiniz...</string>
+    <string name="evrakturu">Evrak Türü</string>
+    <string name="sevktarihi">Sevk Tarihi</string>
+    <string name="odemetarihi">Ödeme Tarihi</string>
+    <string name="kdv_turu">Kdv Türü</string>
+    <string name="dahil">DAHİL</string>
+    <string name="haric">HARİÇ</string>
+    <string name="yok">YOK</string>
+    <string name="evraktarihi">Evrak Tarihi</string>
+    <string name="e_fatura_tipi">e-Fatura Tipi</string>
+    <string name="satis">SATIS</string>
+    <string name="alis">ALIS</string>
+    <string name="iade">IADE</string>
+    <string name="tevkifat">TEVKIFAT</string>
+    <string name="istisna">ISTISNA</string>
+    <string name="iadeistisna">IADEISTISNA</string>
+    <string name="ozelmatrah">OZELMATRAH</string>
+    <string name="ihracatkayitli">IHRACKAYITLI</string>
+    <string name="evrak_tipi">Evrak Tipi</string>
+    <string name="gidenfaturakadu">Giden Fatura Kodu</string>
+    <string name="faturaolusturdu">Fatura Oluşturulmuştur</string>
+    <string name="plakayazdir">Plaka Yazdır</string>
+    <string name="kmyazdir">Km Yazdır</string>
+    <string name="noyazdir">No Yazdır</string>
+    <string name="gidenfaturatarihi">Fatura Tarihi</string>
+    <string name="guncelemebasarili">Güncelleme Başarılı</string>
+    <string name="silmebasarili">Silme Başarılı</string>
+    <string name="cari_sec">Cari Seç</string>
+    <string name="silinsinmi">Silinsin Mi?</string>
+    <string name="vergino_sec">Vergi No Seç</string>
+    <string name="plakasec">Lütfen plaka giriniz!..</string>
+    <string name="sec">Seç</string>
+    <string name="zamanli">Bakım/Muayene/EgzozEmisyon</string>
+    <string name="sigorta1">Sigorta İşlemleri</string>
+    <string name="gorusuldu">Görüşüldü</string>
+    <string name="gorusulmedi">Görüşülmedi</string>
+    <string name="gorusmesonuc">Görüşme Sonucu</string>
+    <string name="kesilenfaturalar">Kesilen Faturalar Havuzu</string>
+    <string name="ustalisteleme">Usta Listeleme</string>
+    <string name="kayitliustalar">Kayıtlı Ustalar</string>
+    <string name="adreslinki">Adres Linki</string>
+    <string name="gonderilmisfaturalar">Gönderilmiş Faturalar</string>
+    <string name="teslimtarihi">Tahmini Teslim Tarihi</string>
+    <string name="aktarilmayan_faturalar">Aktarılmayanlar</string>
+    <string name="reddedilen_faturalar">Reddedilenler</string>
+    <string name="fatura_pdf">Fatura için pdf oluşturulsun mu?</string>
+    <string name="fatura_red">Fatura reddedilsin mi?</string>
+    <string name="fatura_kabul">Fatura içeri aktarılsın mı?</string>
+    <string name="tamam">Tamam</string>
+    <string name="evrak_kodu">Evrak Kodu</string>
+    <string name="fatura_rededilmistir">Fatura Reddedilmiştir</string>
+    <string name="mevcut_kontor">Adet Mevcut Kontörünüz Kalmıştır</string>
+    <string name="kontor_yukle">Mevcut kontörünüz kalmamıştır.Kontör yükleyin</string>
+    <string name="kayitlipaketyok">Bu marka ve model ait kayıtlı paket bulunamamıştır!..</string>
+    <string name="onaylanan_faturalar">Onaylanan Faturalar</string>
+    <string name="iceriaktar_faturalar">İçeri Aktar </string>
+    <string name="cikis">Çıkış Yap </string>
+    <string name="aktarilanlar_faturalar">Aktarılanlar </string>
+    <string name="selpar_odeme">Sistemi kullanabilmeniz için
+    yukarıda belirtilen tutarı ödemeniz gerekmektedir.Herhangi bir sorun halinde 0850 304 26 06
+        telefon numarasından destek alabilirsiniz.</string>
+    <string name="ekspermail">Eksper Mail</string>
+    <string name="ekspertel">Eksper Tel</string>
+    <string name="eksperadres">Eksper Adres</string>
+    <string name="kazatarihi">Kaza Tarihi</string>
+    <string name="policeno">Police No</string>
+    <string name="policebitistarihi">Police Bitiş Tarihi</string>
+    <string name="ustatanimlidegil">Usta tanımlı değil</string>
+    <string name="yapilacaklarigirin">Lütfen yapılacakları giriniz!..</string>
+    <string name="stok">Stok</string>
+    <string name="paket">Paket</string>
+    <string name="stokseciniz">Stoktan seciniz!...</string>
+    <string name="kayitlistokyok">Bu marka ve model ait kayıtlı stok bulunamamıştır!..</string>
+    <string name="uygulamason">Uygulamayı kullanım süresi bitmiştir. İletişim için 0 850 304 26 06 numarayı arayınız.</string>
+    <string name="uygulama1">Uygulamayı kullanım süresinin bitmesine</string>
+    <string name="uygulama2">gün kalmıştır</string>
+    <string name="uygulama3">Süreyi uzatmak için 0 850 304 26 06 numarayı arayınız</string>
+    <string name="plaka_bulunamadi">Plaka Bulunamadı!..</string>
+    <string name="kayityok">Kayıt Bulunamadı!..</string>
+    <string name="birtaksit">Tek Çekim</string>
+    <string name="ikitaksit">2 Taksit</string>
+    <string name="uctaksit">3 Taksit</string>
+    <string name="dorttaksit">4 Taksit</string>
+    <string name="bestaksit">5 Taksit</string>
+    <string name="altitaksit">6 Taksit</string>
+    <string name="yeditaksit">7 Taksit</string>
+    <string name="sekiztaksit">8 Taksit</string>
+    <string name="dokuztaksit">9 Taksit</string>
+    <string name="ontaksit">10 Taksit</string>
+    <string name="onbirtaksit">11 Taksit</string>
+    <string name="onikitaksit">12 Taksit</string>
+    <string name="cekilecektutar">Cekilecek Tutar</string>
+    <string name="yakitturu">Yakıt Türü</string>
+    <string name="benzin">Benzin</string>
+    <string name="dizel">Dizel</string>
+    <string name="hybrit">Hybrit/Benzin</string>
+    <string name="elektrik">Elektrik</string>
+    <string name="aracbilgisi">ARAC BİLGİSİ</string>
+    <string name="manuelfaturakes">Manuel Fatura Kes</string>
+    <string name="gelenmanuelfaturalar">Gelen Manuel Faturalar</string>
+    <string name="gonderilmismanuelfaturalar">Gönderilmiş Manuel Faturalar</string>
+    <string name="eklemebasarili">Ekleme Başarılı</string>
+    <string name="tariharaligi">Tarih Aralığı</string>
+    <string name="baslangic">Başlangıç</string>
+    <string name="bitis">Bitiş</string>
+    <string name="sonucbulunamadi">Fatura Bulunamadı.</string>
+    <string name="desc">Açıklama</string>
+    <string name="rate">Fiyat</string>
+    <string name="qty">Adet</string>
+    <string name="saat">Saat</string>
+    <string name="para">₺</string>
+    <string name="fatura_tutar">Fatura Tutarı</string>
+    <string name="numara">Numara</string>
+    <string-array name="yakit_turu">
+        <item>@string/benzin</item>
+        <item>@string/dizel</item>
+        <item>@string/hybrit</item>
+        <item>@string/elektrik</item>
+    </string-array>
+
+
+    <string-array name="e_fatura_tip">
+        <item>@string/satis</item>
+        <item>@string/iade</item>
+        <item>@string/tevkifat</item>
+        <item>@string/istisna</item>
+        <item>@string/iadeistisna</item>
+        <item>@string/ozelmatrah</item>
+        <item>@string/ihracatkayitli</item>
+    </string-array>
+    <string-array name="gorusme">
+        <item>@string/gorusuldu</item>
+        <item>@string/gorusulmedi</item>
+    </string-array>
+    <string-array name="tur">
+        <item>@string/parcay</item>
+        <item>@string/iscilik</item>
+    </string-array>
+    <string-array name="evrak_tipi">
+        <item>@string/satis</item>
+        <item>@string/alis</item>
+    </string-array>
+    <string-array name="kdv_tip">
+        <item>@string/dahil</item>
+        <item>@string/haric</item>
+        <item>@string/yok</item>
+    </string-array>
+    <string-array name="parabirimi">
+        <item>TL</item>
+        <item>USD</item>
+        <item>EURO</item>
+    </string-array>
+    <string-array name="e_kontrol">
+        <item>EARSIV</item>
+        <item>EFATURA</item>
+    </string-array>
+    <string-array name="entagrator_firmasi">
+        <item>SÜPER ENTEGRASYON</item>
+        <item>FİNANSBANK ENTEGRASYONU</item>
+        <item>EDM ENTEGRASYONU</item>
+        <item>PARK ENTEGRASYONU</item>
+    </string-array>
+
+    <string-array name="efatura_turu">
+        <item>EARSIVFATURA</item>
+        <item>TEMELFATURA</item>
+        <item>TICARIFATURA</item>
+        <item>IHRACAT</item>
+        <item>HKS</item>
+        <item>KAMU</item>
+        <item>EIHRACAT</item>
+    </string-array>
+    <string-array name="kart_durum">
+        <item>@string/islemyapilmayacak</item>
+        <item>@string/kaporta</item>
+        <item>@string/kartacildi</item>
+        <item>@string/kontrolasamasinda</item>
+        <item>@string/merkezincelemede</item>
+        <item>@string/monaybekliyor</item>
+        <item>@string/onarimbitti</item>
+        <item>@string/onaylandi</item>
+        <item>@string/tedarikeksikgeldi</item>
+        <item>@string/tedarikgeldi</item>
+        <item>@string/pertedildi</item>
+        <item>@string/servisyogunlugu</item>
+        <item>@string/sovtajsurecinde</item>
+        <item>@string/tahkikat</item>
+        <item>@string/devamediyor</item>
+        <item>@string/tedarikbekleniyor</item>
+        <item>@string/temizlemede</item>
+        <item>@string/teslimehazir</item>
+        <item>@string/tramerkusurlu</item>
+        <item>@string/tramerkusursuz</item>
+        <item>@string/tramerbekleniyor</item>
+        <item>@string/parcabekleniyor</item>
+        <item>@string/yoneticionayinda</item>
+        <item>@string/boyasirasinda</item>
+        <item>@string/kaportasirasinda</item>
+        <item>@string/eonaybekliyor</item>
+        <item>@string/islemsirasinda</item>
+        <item>@string/teslimedildi</item>
+        <item>@string/boyandi</item>
+        <item>@string/toplamasirasinda</item>
+        <item>@string/kapalikartlar</item>
+    </string-array>
+
+    <string-array name="is_tani">
+        <item>@string/seciniz</item>
+        <item>@string/mekanik_servis</item>
+        <item>@string/kaporta_boya_servis</item>
+        <item>@string/hasar_onarim_servis</item>
+    </string-array>
+    <string-array name="ssl">
+        <item>@string/evet</item>
+        <item>@string/hayir</item>
+    </string-array>
+    <string-array name="odeme_turu">
+        <item>@string/nakit</item>
+        <item>@string/kredikarti</item>
+        <item>@string/bankahavale</item>
+        <item>@string/cek</item>
+        <item>@string/senet</item>
+    </string-array>
+    <string-array name="tahsilat_turu">
+        <item>@string/nakit</item>
+        <item>@string/kredikarti</item>
+        <item>@string/bankahavale</item>
+        <item>@string/cek</item>
+        <item>@string/senet</item>
+        <item>@string/virman</item>
+    </string-array>
+    <string-array name="evrak">
+        <item>Evrak ismi Seciniz</item>
+        <item>Alkol Raporu</item>
+        <item>Anahtar Teslim Yazısı</item>
+        <item>Banka Bilgileri</item>
+        <item>Beyan</item>
+        <item>Beyan Yazısı</item>
+        <item>Ehliyet</item>
+        <item>Ehliyet Raporu</item>
+        <item> Görgü Tespit Tutanağı</item>
+        <item> Hastane Raporları</item>
+        <item> İbraname Yazısı</item>
+        <item> İfade Tutanağı</item>
+        <item> İkama Araç Formu</item>
+        <item> Kasko Poliçesi</item>
+        <item> Kaza Tespit Tutanağı </item>
+        <item> Kurum Kimlik   </item>
+        <item> Mağdur Araç Ruhsatı </item>
+        <item> Mağdur Iban-Banka Adı  </item>
+        <item> Mağdur Nüfus Cüz. Kimlik No </item>
+        <item> Mağdur Vergi Numarası</item>
+        <item> Mal Alış Faturası  </item>
+        <item> Meslek Bilgisi </item>
+        <item> Mutakabat Yazısı </item>
+        <item> Prim Makbuzu </item>
+        <item> Ruhsat </item>
+        <item> Servis Faturası </item>
+        <item> Sigorta Poliçesi </item>
+        <item> Taahhüt  </item>
+        <item> Taahhüt Belgesi  </item>
+        <item> Teslim İbra  </item>
+        <item> Trafik/Jandarma Zabtı</item>
+        <item> Trafik Poliçesi</item>
+        <item> Tedarik Parça Tespit Tutanağı</item>
+        <item> Vekaletname</item>
+        <item> Vekil Nüfus Cüzdanı</item>
+        <item> Yansıtma Faturası  </item>
+        <item> Zabıt </item>
+    </string-array>
+    <string-array name="tuttanak_tipi">
+        <item>ANLAŞMALI TUTANAK</item>
+        <item>BEYAN </item>
+        <item>JANDARMA RAPORU </item>
+        <item>POLİS RAPORU </item>
+    </string-array>
+    <string-array name="sigorta_tipi">
+
+        <item>Şahıs</item>
+        <item>Şirket</item>
+        <item>Filo</item>
+        <item>Kiralama</item>
+        <item>Kurum</item>
+    </string-array>
+    <string-array name="police_turu">
+        <item>Kasko</item>
+        <item>Trafik</item>
+        <item>Mini Onarım</item>
+        <item>Özel Hasar</item>
+    </string-array>
+    <string-array name="arac_turu">
+        <item></item>
+        <item>BINEK</item>
+        <item>HAFIF TICARI</item>
+    </string-array>
+    <string-array name="arac_turu_mekanik">
+        <item></item>
+        <item>AGIR VASITA</item>
+        <item>BINEK</item>
+        <item>HAFIF TICARI</item>
+        <item>IS MAKINELERI</item>
+        <item>MARIN</item>
+        <item>MOTORSIKLET</item>
+        <item>TARIM MAKINELERI</item>
+        <item>TRAKTOR</item>
+        <item>KARAVAN</item>
+    </string-array>
+    <string-array name="marka_binek">
+        <item>ABARTH</item>
+        <item>AC</item>
+        <item>ACURA</item>
+        <item>AGRALE</item>
+        <item>AİXAM</item>
+        <item>ALFAROMEO</item>
+        <item>AMC</item>
+        <item>ANADOL</item>
+        <item>ARO</item>
+        <item>ASTON MARTIN</item>
+        <item>AUDI</item>
+        <item>AUSTIN</item>
+        <item>AUTOBIANCHI</item>
+        <item>AUTOUNION</item>
+        <item>BAIC</item>
+        <item>BAJAJ</item>
+        <item>BENTLEY</item>
+        <item>BMW</item>
+
+    </string-array>
+    <string-array name="model">
+        <item>124</item>
+        <item>595</item>
+        <item>695</item>
+    </string-array>
+    <string-array name="renk">
+        <item>BEJ</item>
+        <item>BEYAZ</item>
+        <item>BORDO</item>
+        <item>FÜME</item>
+        <item>GRİ</item>
+        <item>GÜMÜŞ GRİ</item>
+        <item>KAHVERENGİ</item>
+        <item>KIRMIZI</item>
+        <item>LACİVERT</item>
+        <item>MAVİ</item>
+        <item>MOR</item>
+        <item>PEMBE</item>
+        <item>SARI</item>
+        <item>SİYAH</item>
+        <item>ŞAMPANYA</item>
+        <item>TURKUAZ</item>
+        <item>TURUNCU</item>
+        <item>YEŞİL</item>
+        <item>METALİK GRİ</item>
+        <item>TİTANYUM GRİ</item>
+        <item>METALİK MAVİ</item>
+        <item>METALİK YEŞİL</item>
+        <item>DİĞER </item>
+    </string-array>
+    <string-array name="konum">
+        <item>Serviste</item>
+        <item>Sahibinde</item>
+        <item>Otoparkta</item>
+        <item>Olay Yerinde</item>
+    </string-array>
+    <string-array name="durum">
+        <item>Yürüyor</item>
+        <item>Yürümüyor</item>
+    </string-array>
+    <string-array name="parca_turu">
+        <item>@string/degistir</item>
+        <item>@string/tamiret</item>
+    </string-array>
+    <string-array name="kasa_tipi">
+        <item>CAMRIO</item>
+        <item>CAMLI VAN</item>
+        <item>CARGO</item>
+        <item>COMBOMİX</item>
+        <item>COUPE</item>
+        <item>CROSS OVER</item>
+        <item>HACKBACK</item>
+        <item>KAMYON</item>
+        <item>KAMYONET</item>
+        <item>KAMYONET ÇK</item>
+        <item>KARAVAN</item>
+        <item>MİDİBÜS</item>
+        <item>MİNİBÜS</item>
+        <item>MİNİBÜS LONG</item>
+        <item>MİNİVAN</item>
+        <item>MULTİVAN</item>
+        <item>OFF-ROAD</item>
+        <item>OTOBÜS</item>
+        <item>PANELVAN</item>
+        <item>PICKUP</item>
+        <item>ROADSTER</item>
+        <item>SEDAN</item>
+        <item>STATION VAGON</item>
+        <item>SUV</item>
+        <item>SUV AÇIK</item>
+        <item>VAN</item>
+        <item>VAN LONG</item>
+    </string-array>
+    <string-array name="model_vrs">
+        <item>595</item>
+        <item>595 ComletIzlone</item>
+        <item>595 EsseEsse</item>
+        <item>595 Turlsmo</item>
+    </string-array>
+
+</resources>

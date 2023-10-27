@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        <!-- app:menu="@menu/activity_main_drawer"-->
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:animation="@anim/menu_animation">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageprofil"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/profil"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:shapeAppearance="@style/roundimage"></com.google.android.material.imageview.ShapeableImageView>
+            <TextView
+                android:id="@+id/txtad_soyad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                ></TextView>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:logo="@drawable/ic_baseline_toggle_on_24"
+                android:title="@string/menu">
+
+
+            </androidx.appcompat.widget.Toolbar>
+            <ExpandableListView
+                android:id="@+id/navigationmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/white"></ExpandableListView>
+
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <EditText
+        android:id="@+id/plaka_no"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/search"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/btn_bilgi_ara"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:src="@drawable/arama"
+        app:layout_constraintStart_toEndOf="@+id/plaka_no"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_barkod"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:src="@drawable/qrcode"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_bilgi_ara"
+        app:layout_constraintStart_toEndOf="@+id/btn_bilgi_ara"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/slider_back"
+        app:iss_auto_cycle="true"
+        app:iss_delay="6000"
+        app:iss_period="1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plaka_no"
+        tools:ignore="MissingClass">
+
+    </com.denzcoskun.imageslider.ImageSlider>
+
+    <RelativeLayout
+        android:id="@+id/id_bugun_acilan"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/turuncu"
+        android:onClick="bugunAcilan"
+        app:layout_constraintTop_toBottomOf="@+id/image_slider"
+        tools:layout_editor_absoluteX="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="@string/bugun_acilankartlar"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/bugunacilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/acilan_adet"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:background="#00000000"
+            android:onClick="bugunAcilan"
+            android:padding="20dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+
+            android:src="@drawable/shop" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_acik_kartlar"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/acikkart"
+        android:onClick="goster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_bugun_acilan"
+        app:layout_constraintTop_toBottomOf="@+id/image_slider">
+
+        <TextView
+            android:id="@+id/acikkartgoster"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="@string/acik_kartlar"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/acikkart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/adet"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-180dp"
+            android:background="#00000000"
+            android:onClick="goster"
+            android:padding="20dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="50dp"
+
+            android:src="@drawable/files" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_teslimi_geciken"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/teslimigeciken"
+        android:onClick="goster"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_bugun_acilan">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="@string/teslimi_geciken"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/teslimigeciken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/adet"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:onClick="goster"
+            android:padding="20dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+
+            android:src="@drawable/car" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_onay_bekleyen"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/onaybekleyn"
+        android:onClick="goster"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_teslimi_geciken"
+        app:layout_constraintTop_toBottomOf="@+id/id_acik_kartlar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="@string/onay_bekleyenler"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/onaybekleyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/adet"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:onClick="goster"
+            android:padding="20dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="60dp"
+
+            android:src="@drawable/onay" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_teslime_hazir"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/teslimehazir"
+        android:onClick="teslime_hazir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_teslimi_geciken">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="@string/teslime_hazir_araclar"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/teslimehazir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/date"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:onClick="teslime_hazir"
+            android:padding="20dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+
+            android:src="@drawable/peopl" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_kapali_kartlar"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/kapalikart"
+        android:onClick="kapali_kartlar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_teslime_hazir"
+        app:layout_constraintTop_toBottomOf="@+id/id_onay_bekleyen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="@string/kapali_kartlar"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/kapalikart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/adet"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:onClick="kapali_kartlar"
+            android:padding="20dp"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/resim"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/rehber" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_mekanik_kabul_karti_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:background="@color/design_default_color_error"
+        android:text="@string/mekanik_kart_ac"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_teslime_hazir"></Button>
+
+
+    <Button
+        android:id="@+id/btn_kart_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:background="@color/purple_500"
+        android:text="@string/hasar_kart_ac"
+        android:textColor="#fff"
+        app:layout_constraintStart_toEndOf="@+id/btn_mekanik_kabul_karti_ac"
+        app:layout_constraintTop_toBottomOf="@+id/id_kapali_kartlar"></Button>
+
+    <Button
+        android:id="@+id/kayitliaraclar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:text="@string/kayitliaraclar"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mekanik_kabul_karti_ac"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

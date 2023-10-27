@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TumAracBilgiGuncelleActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/toolbar_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_chevron_left_white_24px"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:tint="@color/gray" />
+
+        <ImageView
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_chevron_right_white_24px"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:tint="@color/gray" />
+
+        <ImageView
+            android:id="@+id/billing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_not_interested_white_24px"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:tint="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/refresh"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_refresh_white_24px"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                app:tint="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/arac_bilgi">
+        <ImageView
+            android:id="@+id/btn_geri"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/geri"
+            android:visibility="gone"></ImageView>
+        <ImageView
+            android:id="@+id/img_resim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           ></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aracbilgisi"
+                android:layout_gravity="left"
+                android:gravity="left"></TextView>
+            <TextView
+                android:id="@+id/txt_plaka_no"
+                android:layout_marginLeft="150dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLAKA BİLGİSİ"
+                android:layout_gravity="right"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/red"
+                android:gravity="right"></TextView>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow
+                        android:background="#ddd">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/marka" />
+
+                        <Spinner
+                            android:id="@+id/spinner_marka_kart_ac"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="14dp"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/model" />
+                        <Spinner
+                            android:id="@+id/spinner_model_kart_ac"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                    </TableRow>
+                    <TableRow
+                        android:background="#ddd">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/modelversiyon" />
+
+                        <Spinner
+                            android:id="@+id/spinner_modelVrs_kart_ac"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/modelyili" />
+
+                        <EditText
+                            android:id="@+id/txt_model_y_kart_ac"
+                            android:layout_width="180dp"
+                            android:maxLength="4"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </TableRow>
+                </TableLayout>
+
+             <View
+                 android:layout_height="2dp"
+                 android:layout_width="match_parent"
+                 android:background="@color/yellow"></View>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+
+                    <TableRow
+                        android:background="#dddddd"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kasatipi" />
+
+                        <EditText
+                            android:id="@+id/txt_kasatipi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </TableRow>
+                    <TableRow android:background="#F0F7F7" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KM" />
+                        <EditText
+                            android:id="@+id/txt_kmsaat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#dddddd"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/renk" />
+
+                        <EditText
+                            android:id="@+id/txt_renk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </TableRow>
+                    <TableRow android:background="#F0F7F7" >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/saseno" />
+                        <EditText
+                            android:id="@+id/txt_sase"
+                            android:maxLength="17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                    </TableRow>
+                    <TableRow android:background="#ddd">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/motorno" />
+                        <EditText
+                            android:id="@+id/txt_motor_no_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                    </TableRow>
+
+
+
+<View
+    android:layout_height="3dp"
+    android:layout_width="match_parent"
+    android:background="@color/red"></View>
+                    <TableRow
+                        android:background="#F0F7F7"
+
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mua" />
+
+                        <EditText
+                            android:id="@+id/mua_bitis_tarihi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:layout_weight="1" />
+
+
+                    </TableRow>
+                    <TableRow
+                        android:background="#ddd"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/muayaklasan" />
+
+                        <EditText
+                            android:id="@+id/muayaklasan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:id="@+id/mua_bitis_tarihi_kalan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/red"
+                            android:textSize="10dp">
+
+                        </TextView>
+
+                    </TableRow>
+                    <TableRow
+                        android:background="#F0F7F7"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/egzozyaklasan" />
+
+                        <EditText
+                            android:id="@+id/egzozyaklasan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:id="@+id/egzozyaklasan_tarihi_kalan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/red"
+                            android:textSize="10dp">
+
+                        </TextView>
+
+                    </TableRow>
+                    <TableRow
+                        android:background="#ddd"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/trafiksigortasiyaklasan" />
+
+                        <EditText
+                            android:id="@+id/trafiksigortasiyaklasan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:id="@+id/trafiksigortasiyaklasan_tarihi_kalan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/red"
+                            android:textSize="10dp">
+
+                        </TextView>
+
+                    </TableRow>
+                    <TableRow
+                        android:background="#F0F7F7"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kaskosigortasiyaklasan" />
+
+                        <EditText
+                            android:id="@+id/kaskosigortasiyaklasan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:id="@+id/kaskosigortasiyaklasan_tarihi_kalan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/red"
+                            android:textSize="10dp">
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#ddd"
+                        android:layout_marginTop="10dp">
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+                <Button
+                    android:id="@+id/btn_guncelle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+
+                    android:text="@string/guncelle"></Button></LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

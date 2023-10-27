@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:id="@+id/btnPdfhesapla"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        app:contentPaddingRight="10dp"
+        card_view:cardElevation="15dp"
+        app:cardElevation="50dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/Tvplaka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:text="33"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/Tvaracresim"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/car" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtisim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    ></TextView>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="-60dp"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bitiş Tarihi:"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+
+                        android:textColor="@color/black"
+                        ></TextView>
+                    <TextView
+                        android:id="@+id/Tvonarim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="33"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+
+                        />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:gravity="right"
+                >
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:gravity="right"
+
+            >
+            <ImageView
+                android:id="@+id/image_view_tel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_phone_24"
+                android:layout_gravity="right"
+                >
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/image_view_whatsapp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/whatsapp"
+                android:layout_gravity="right">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/image_view_soru"
+                android:src="@drawable/soru_b"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                ></ImageView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txt_kalansure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            ></TextView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

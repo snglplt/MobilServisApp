@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.IstekSikayetFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_istek_ses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ses"
+                android:background="@color/black"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:visibility="gone"></Button>
+            <Button
+                android:id="@+id/btn_istek_yazi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yazi"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:textColor="#fff"></Button>
+            <Button
+                android:id="@+id/btn_iscilik_parca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resim"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:textColor="#fff"></Button>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fragment_istek_sikayet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp">
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

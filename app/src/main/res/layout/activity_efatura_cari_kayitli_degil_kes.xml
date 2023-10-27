@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="3000dp"
+    tools:context=".ui.eFaturaOlusturActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/toolbar_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_chevron_left_white_24px"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:tint="@color/gray" />
+
+        <ImageView
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_chevron_right_white_24px"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:tint="@color/gray" />
+
+        <ImageView
+            android:id="@+id/billing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_not_interested_white_24px"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:tint="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/refresh"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_refresh_white_24px"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                app:tint="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAYIN"
+                    android:textStyle="bold"
+                    android:padding="2dp"></TextView>
+
+
+
+                <TextView
+                    android:id="@+id/txt_cari_unvan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/txt_adres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    ></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+                    <TextView
+                        android:id="@+id/txt_il"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        ></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"></TextView>
+
+
+                    <TextView
+                        android:id="@+id/txt_ilce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        ></TextView>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    ></TextView>
+
+
+                <TextView
+                    android:id="@+id/txt_gsm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    ></TextView>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="V.D:"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:id="@+id/txt_vergi_dairesi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VKN:"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_vergi_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+                        <TextView
+                            android:background="@color/blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Senaryo:"
+                            android:textColor="#fff"></TextView>
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EARSIVFATURA"></TextView>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:background="@color/blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fatura Tipi:"
+                            android:textColor="#fff"></TextView>
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SATIS"></TextView>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:background="@color/blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fatura No:"
+                            android:textColor="#fff"></TextView>
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PAR1234567899"></TextView>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:background="@color/blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fatura Tarihi:"
+                            android:textColor="#fff"></TextView>
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="04.04.2023"></TextView>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:background="@color/blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Düz. Zamanı:"
+                            android:textColor="#fff"></TextView>
+
+                        <TextView
+
+                            android:id="@+id/txttarih"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="16:57:49"></TextView>
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <HorizontalScrollView
+        android:id="@+id/scroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdgeLength="5dip"
+        android:scrollbars="horizontal"
+        android:overScrollMode="always"
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/blue">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Kodu"
+                    android:textColor="#fff"
+                    >
+
+                </TextView>
+                <TextView
+                    android:text="Açıklama"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    >
+
+                </TextView>
+                <TextView
+                    android:text="Miktar"
+                    android:id="@+id/txtmiktar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textColor="#fff">
+
+                </TextView>
+                <TextView
+                    android:text="Fiyat"
+                    android:id="@+id/txtfiyat"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textColor="#fff">
+
+                </TextView>
+                <TextView
+                    android:text="Kdv O."
+                    android:id="@+id/txtkdvorani"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textColor="#fff">
+
+                </TextView>
+                <TextView
+                    android:text="Kdv Tutarı"
+                    android:id="@+id/txtkdvtutar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textColor="#fff">
+
+                </TextView>
+                <TextView
+                    android:text="Tutar"
+                    android:id="@+id/txttutar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff">
+
+                </TextView>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"></View>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rc_fatura"></androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="660dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="right"
+                android:gravity="right">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/blue"
+                            android:text="Toplam Tutar"
+                            android:textColor="#fff"></TextView>
+
+                        <TextView
+                            android:id="@+id/txtmalhizmettoplamtutar2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="right"
+                        android:gravity="right">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/blue"
+                            android:text="KDV(%18)"
+                            android:textColor="#fff"></TextView>
+
+                        <TextView
+                            android:id="@+id/txthesaplanankdv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"></TextView>
+                    </TableRow>
+
+                    <TableRow android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/blue"
+                            android:text="Beyan Edilecek KDV"
+                            android:textColor="#fff"></TextView>
+
+                        <TextView
+                            android:id="@+id/txtbeyanedilenkdv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:paddingLeft="19dp"></TextView>
+                    </TableRow>
+
+                    <TableRow android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/blue"
+                            android:text="Vergiler Dahil Toplam Tutar"
+                            android:textColor="#fff"></TextView>
+
+                        <TextView
+                            android:id="@+id/txtvergilerdahiltoplamtutar2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"></TextView>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/blue"
+                            android:text="Ödenecek Tutar"
+                            android:textColor="#fff"></TextView>
+
+                        <TextView
+                            android:id="@+id/txtodenecektutar2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"></TextView>
+                    </TableRow>
+                </TableLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/sayitoyazi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue"
+
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#fff"></TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/e_fatura_eklefloating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_text_snippet_24"
+        android:layout_gravity="right"
+        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="729dp"
+        android:fillViewport="true"
+        android:scrollbars="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/gridView_baslik"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:columnWidth="300dp"
+                android:numColumns="7"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:columnWidth="300dp"
+                android:numColumns="7"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Toplam Tutar"
+                        android:textColor="#fff"
+                        android:background="@color/blue"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtmalhizmettoplamtutar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"></TextView>
+                </TableRow>
+                <TableRow
+                    android:layout_gravity="right"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hesaplanan KDV(%18)"
+                        android:textColor="#fff"
+                        android:background="@color/blue"></TextView>
+
+                    <TextView
+                        android:id="@+id/txthesaplanankdv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"></TextView>
+                </TableRow>
+                <TableRow
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beyan Edilecek KDV"
+                        android:textColor="#fff"
+                        android:background="@color/blue"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtbeyanedilenkdv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"></TextView>
+                </TableRow>
+                <TableRow
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vergiler Dahil Toplam Tutar"
+                        android:textColor="#fff"
+                        android:background="@color/blue"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtvergilerdahiltoplamtutar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"></TextView>
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ödenecek Tutar"
+                        android:background="@color/blue"
+                        android:textColor="#fff"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtodenecektutar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:paddingLeft="11dp"></TextView>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:background="@color/blue"
+                android:id="@+id/sayitoyazi"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="10dp"></TextView>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <TableLayout
+            android:id="@+id/table_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:padding="5dp"
+                android:background="#fff">
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Stok No"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:text="Açıklama"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Miktar"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Fiyat"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="KDV"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Tutar"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+
+
+            </TableRow>
+            <TableRow
+                android:paddingLeft="5dp">
+                <TextView
+                    android:id="@+id/txt_stokno"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Stok No"
+                    android:padding="5dp"
+                    android:background="@drawable/back"
+                    android:visibility="gone"></TextView>
+                <TextView
+                    android:id="@+id/txt_aciklama"
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Açıklama"
+                    android:padding="5dp"
+                    android:background="@drawable/back"
+                    android:visibility="gone"></TextView>
+                <TextView
+                    android:id="@+id/txt_miktar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Miktar"
+                    android:padding="5dp"
+                    android:background="@drawable/back"
+                    android:visibility="gone"></TextView>
+                <TextView
+                    android:id="@+id/txt_fiyat"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Fiyat"
+                    android:padding="5dp"
+                    android:background="@drawable/back"
+                    android:visibility="gone"></TextView>
+                <TextView
+                    android:id="@+id/txt_kdv_tek"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Tutar"
+                    android:padding="5dp"
+                    android:background="@drawable/back"
+                    android:visibility="gone"></TextView>
+                <TextView
+                    android:id="@+id/txt_tutar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Tutar"
+                    android:padding="5dp"
+                    android:background="@drawable/back"
+                    android:visibility="gone"></TextView>
+
+
+            </TableRow>
+            <TableRow
+                android:paddingLeft="5dp"
+                android:background="#ddd">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    ></TextView>
+
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Toplam"
+                    android:layout_gravity="right"
+                    android:padding="5dp"
+                    ></TextView>
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+                    android:id="@+id/txt_toplam"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Tutar"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+
+            </TableRow>
+            <TableRow
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    ></TextView>
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="KDV"
+                    android:layout_gravity="right"
+                    android:padding="5dp"
+                    ></TextView>
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+                    android:id="@+id/txt_kdv"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="0"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+
+            </TableRow>
+            <TableRow
+                android:paddingLeft="5dp"
+                android:background="#ddd">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    ></TextView>
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Tutar"
+                    android:layout_gravity="right"
+                    android:padding="5dp"
+                    ></TextView>
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+                <TextView
+                    android:id="@+id/txt_tutar_toplam"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Tutar"
+                    android:padding="5dp"
+                    android:background="@drawable/back"></TextView>
+
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

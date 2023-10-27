@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+        <TableRow
+            android:background="#dddddd"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unvan" />
+
+            <EditText
+                android:id="@+id/etUnvan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp" />
+
+        </TableRow>
+        <TableRow android:background="#F0F7F7" android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vergino" />
+
+            <EditText
+                android:id="@+id/etVergi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp" />
+
+        </TableRow>
+        <TableRow android:background="#F0F7F7" android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vergidairesi" />
+
+            <EditText
+                android:id="@+id/etVergidairesi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp" />
+
+        </TableRow>
+        <TableRow
+            android:background="#dddddd"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adres" />
+
+            <EditText
+                android:id="@+id/etAdres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp" />
+
+        </TableRow>
+        <TableRow android:background="#F0F7F7" android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/il" />
+
+            <EditText
+                android:id="@+id/etIlG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#dddddd"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ilce" />
+
+            <EditText
+                android:id="@+id/etIlce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp" />
+
+        </TableRow>
+        <TableRow android:background="#F0F7F7" android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tel" />
+
+            <EditText
+                android:id="@+id/ettel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textSize="14dp"
+                />
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/gonder_firma_tel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/phone_">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/gonder_firma"
+                android:layout_marginTop="2dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/sms_">
+            </ImageView>
+
+        </TableRow>
+
+        <TableRow android:background="#ddd" android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sad_soyad" />
+
+            <EditText
+                android:id="@+id/etsAdSoyad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:background="#F0F7F7"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stc" />
+
+            <EditText
+                android:id="@+id/etsTc"
+                android:inputType="number"
+                android:maxLength="11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp" />
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/gonder_surucu_tel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/phone_"
+                ></ImageView>
+            <ImageView
+                android:id="@+id/gonder_surucu"
+                android:layout_marginTop="2dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/sms_">
+            </ImageView>
+
+        </TableRow>
+
+        <TableRow
+            android:background="#dddddd"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banka İsmi" />
+
+            <EditText
+                android:id="@+id/etBankaİsmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#F0F7F7"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IBAN"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etIban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#dddddd"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btn_ilerle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:text="@string/guncelle"></Button>
+        </TableRow>
+
+
+    </TableLayout>
+
+</ScrollView>

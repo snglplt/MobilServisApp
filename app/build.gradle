@@ -1,0 +1,165 @@
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id("androidx.navigation.safeargs")
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+
+
+}
+
+
+android {
+    namespace 'com.selpar.pratikhasar'
+    compileSdk 33
+
+
+    defaultConfig {
+        applicationId "com.selpar.pratikhasar"
+        minSdk 24
+        targetSdk  33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    dataBinding{
+        enabled=true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    packagingOptions{
+        exclude 'META-INF/NOTICE.md'
+        exclude 'META-INF/LICENSE.md'
+    }
+
+
+
+dependencies {
+
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.2"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.2"
+    implementation 'jp.wasabeef:recyclerview-animators:1.3.0'
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+
+    implementation "com.squareup.retrofit2:retrofit:2.3.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.3.0"
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.1"
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.2.2'
+
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+   // implementation 'com.google.zxing:core:3.3.3'
+ //  implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'cn.bluemobi.dylan:photoview:1.4'
+    implementation 'net.pwall.json:json-kotlin-schema-codegen:0.87'
+    //noinspection GradleCompatible
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:23.0.1'
+    implementation 'com.itextpdf:itextg:5.5.10'
+  //  implementation("com.pspdfkit:pspdfkit:8.5.1")
+
+     def nav_version = "2.5.3"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "androidx.startup:startup-runtime:1.0.0"
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:23.1.1'
+    //noinspection GradleCompatible
+    implementation 'androidx.viewpager2:viewpager2:1.0.0-beta02'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+    implementation 'com.sun.mail:android-mail:1.6.6'
+    implementation 'com.sun.mail:android-activation:1.6.7'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    implementation 'com.craftman.cardform:cardform:0.0.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.hp.jipp:jipp-core:0.7.12'
+    implementation 'com.hp.jipp:jipp-pdl:0.7.12'
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+
+    /*implementation ('androidmads.library.qrgenerator:QRGenearator:1.0.0') {
+        exclude group: 'com.google.zxing', module: 'core'
+    }*/
+    //implementation 'com.google.zxing:core:3.4.0'
+    //implementation 'androidmads.library.qrgenerator:QRGenerator:1.0.3'
+
+    implementation 'com.journeyapps:zxing-android-embedded:3.0.2@aar'
+    implementation 'com.google.zxing:core:3.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+
+
+    // implementation 'com.github.furkanturkn:camerax-mlkit-pack:1.0.9'
+    //implementation "androidx.camera:camera-view:1.2.1"
+    //implementation 'com.commit451:PhotoView:1.2.4'
+    //noinspection GradleCompatible
+
+
+    //noinspection GradleCompatible
+
+
+}
+}
+
+dependencies {
+    implementation 'cn.bluemobi.dylan:photoview:1.4'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.camera:camera-lifecycle:1.2.1'
+    implementation 'androidx.games:games-text-input:2.0.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.2.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+    implementation 'com.google.android.material:material:1.5.0'
+    //implementation 'com.google.android.gms:play-services-mlkit-barcode-scanning:18.1.0'
+   // implementation 'com.google.ar:core:1.36.0'
+   // implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.9.4'
+  //  implementation 'com.google.android.gms:play-services-vision:20.1.3'
+}
+
+

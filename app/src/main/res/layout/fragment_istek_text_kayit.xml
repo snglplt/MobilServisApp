@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.IstekTextKayitFragment"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <Button
+        android:id="@+id/btn_istek_yazi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/iscilikekle"
+        android:padding="5dp"
+        android:background="@color/purple_500"
+        android:textColor="#fff"></Button>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rc_istekyazi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

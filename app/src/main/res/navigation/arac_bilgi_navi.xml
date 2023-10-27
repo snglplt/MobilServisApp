@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/arac_bilgi_navi"
+    app:startDestination="@id/aracSahibiFragment2">
+
+    <fragment
+        android:id="@+id/sigortaFragment"
+        android:name="com.selpar.pratikhasar.fragment.SigortaFragment"
+        android:label="SigortaFragment" />
+    <fragment
+        android:id="@+id/aracSahibiFragment2"
+        android:name="AracSahibiFragment"
+        android:label="AracSahibiFragment" />
+    <fragment
+        android:id="@+id/tumFragment"
+        android:name="com.selpar.pratikhasar.fragment.TumFragment"
+        android:label="fragment_tum"
+        tools:layout="@layout/fragment_tum" />
+    <fragment
+        android:id="@+id/onarimFragment"
+        android:name="com.selpar.pratikhasar.fragment.OnarimFragment"
+        android:label="OnarimFragment" />
+</navigation>

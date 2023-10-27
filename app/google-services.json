@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "331619321497",
+    "project_id": "pratikhasar",
+    "storage_bucket": "pratikhasar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331619321497:android:9842d9ac49e6598b139a08",
+        "android_client_info": {
+          "package_name": "com.selpar.pratikhasar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331619321497-ovqteca8rs3kfjhapqler5b284m3dn1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.selpar.pratikhasar",
+            "certificate_hash": "da80adf0aa54ea9a262a8255061a6e75dcbca1b6"
+          }
+        },
+        {
+          "client_id": "331619321497-99m0nvi5ebalp1e86e1n3ba7745mallp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCysdU_0sO2KO9y8nKr2TTV3nl_yRNuDko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331619321497-99m0nvi5ebalp1e86e1n3ba7745mallp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_onay_bekleyen"
+            android:icon="@drawable/ic_baseline_sms_24"
+            android:title="SMS Ayarları" >
+
+        </item>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_baseline_email_24"
+            android:title="Mail Ayarları" />
+        <item
+            android:id="@+id/nav_uye"
+            android:icon="@drawable/ic_baseline_post_add_24"
+            android:title="Sanal Pos Ayarları " />
+
+        <item
+            android:id="@+id/nav_arac_takip"
+            android:icon="@drawable/ic_baseline_bookmark_add_24"
+            android:title=" Kampanya ve Duyurular" />
+        <item
+            android:id="@+id/nav_personel_tanimla"
+            android:icon="@drawable/ic_baseline_av_timer_24"
+            android:title=" Zamanlı İşlemler" />
+
+
+
+
+        <item
+            android:icon="@drawable/ic_baseline_attach_money_24"
+            android:title="Satın Al"
+            ></item>
+    </group>
+</menu>

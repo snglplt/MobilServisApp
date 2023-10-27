@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stokid"
+        android:visibility="gone"></TextView>
+      <TableLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TableRow
+              android:id="@+id/baslik_linnerr"
+              android:padding="5dp"
+              android:background="#ddd">
+              <TextView
+                  android:id="@+id/textstokno"
+                  android:padding="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/stokno"
+                  android:visibility="gone"
+                  ></TextView>
+              <TextView
+                  android:padding="5dp"
+                  android:id="@+id/stokno"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  ></TextView>
+              <TextView
+                  android:id="@+id/textstokadi"
+                  android:padding="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/stokadi"
+                  android:visibility="gone"
+                  ></TextView>
+              <TextView
+                  android:padding="5dp"
+                  android:id="@+id/stokadi"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  ></TextView>
+              <TextView
+                  android:padding="5dp"
+                  android:id="@+id/txt_parca_turu"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:layout_weight="1"
+                  ></TextView>
+
+          </TableRow>
+          <TableRow android:padding="5dp">
+              <TextView
+                  android:id="@+id/textfiyat"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/fiyat"
+                  android:layout_weight="1"
+                  ></TextView>
+              <TextView
+                  android:id="@+id/fiyat"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+
+                  ></TextView>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="KDV"
+                  android:layout_weight="1"
+
+                  ></TextView>
+              <TextView
+                  android:id="@+id/kdv"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+
+                  ></TextView>
+              <TextView
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="@string/parabirimi"
+                  android:visibility="gone">
+
+              </TextView>
+              <TextView
+                  android:id="@+id/parabirimi"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:layout_weight="1"
+                  >
+
+              </TextView>
+
+          </TableRow>
+      </TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorPrimary">
+
+    </View>
+
+</LinearLayout>

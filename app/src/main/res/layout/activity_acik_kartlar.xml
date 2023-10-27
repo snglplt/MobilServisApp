@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bilgi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.AcikKartlarActivity">
+    <LinearLayout
+        android:id="@+id/toolbar_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_chevron_left_white_24px"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:tint="@color/gray" />
+
+        <ImageView
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_chevron_right_white_24px"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:tint="@color/gray" />
+
+        <ImageView
+            android:id="@+id/billing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_not_interested_white_24px"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:tint="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/refresh"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_refresh_white_24px"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                app:tint="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/plaka_no"
+            android:hint="@string/search"
+
+            android:textColorHint="@color/sitecolor"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:textColor="@color/sitecolor"
+            android:textSize="25dp">
+
+        </EditText>
+
+        <ImageView
+            android:padding="2dp"
+            android:src="@drawable/search"
+            android:id="@+id/btn_bilgi_ara"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/btn_barkod"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:src="@drawable/qr_codee"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/btn_geri"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/geri"
+            android:padding="2dp"
+
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+
+            ></ImageView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/purple"
+        >
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_weight="1"
+          android:padding="5dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="HASAR KARTI: "
+              android:textColor="@color/black"
+              android:textStyle="bold"
+              ></TextView>
+          <TextView
+              android:id="@+id/txt_hasar"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:textColor="@color/black"
+              android:textStyle="bold"
+              ></TextView>
+      </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_weight="1"
+           android:padding="5dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="  MEKANİK KARTI: "
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               ></TextView>
+           <TextView
+               android:id="@+id/txt_mekanik"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               ></TextView>
+       </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/sitecolor"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOPLAM: "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                ></TextView>
+            <TextView
+                android:id="@+id/txt_hasar_toplam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOPLAM: "
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                ></TextView>
+            <TextView
+                android:id="@+id/txt_mekanik_toplam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                ></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

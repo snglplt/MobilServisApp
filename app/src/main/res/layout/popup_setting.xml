@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/bugun_acilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/bugun_acilankartlar" />
+
+    <CheckBox
+        android:id="@+id/acik_kartlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="@string/acik_kartlar" />
+
+    <CheckBox
+        android:id="@+id/teslimi_geciken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+
+        android:text="@string/teslimi_geciken" />
+
+    <CheckBox
+        android:id="@+id/onay_bekleyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+
+        android:text="@string/onay_bekleyenler" />
+
+
+
+    <CheckBox
+        android:id="@+id/teslime_hazir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="@string/teslime_hazir_araclar" />
+
+    <CheckBox
+        android:id="@+id/kapali_kartlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="@string/kapali_kartlar" />
+
+
+</LinearLayout>

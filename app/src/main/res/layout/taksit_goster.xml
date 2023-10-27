@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/txtkart_ismi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="20dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/tutar"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Komisyon"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/toplam"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_birtaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/birtaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp"></Button>
+
+            <TextView
+                android:id="@+id/txt_tutar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"></TextView>
+
+            <TextView
+                android:id="@+id/txt_birtaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ikitaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ikitaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/txt_tutar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_ikitaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_uctaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/uctaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp">
+
+            </Button>
+            <TextView
+                android:id="@+id/txt_tutar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+
+
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_uctaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dorttaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dorttaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp">
+            </Button>
+            <TextView
+                android:id="@+id/txt_tutar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp" ></TextView>
+
+            <TextView
+                android:id="@+id/txt_dorttaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_bestaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bestaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp">
+
+            </Button>
+            <TextView
+                android:id="@+id/txt_tutar5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp" ></TextView>
+
+            <TextView
+                android:id="@+id/txt_bestaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_altitaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/altitaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp">
+
+            </Button>
+            <TextView
+                android:id="@+id/txt_tutar6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp" ></TextView>
+
+            <TextView
+                android:id="@+id/txt_altitaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_yeditaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/yeditaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp">
+
+            </Button>
+            <TextView
+                android:id="@+id/txt_tutar7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp" ></TextView>
+
+            <TextView
+                android:id="@+id/txt_yeditaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_sekiztaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sekiztaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp">
+            </Button>
+            <TextView
+                android:id="@+id/txt_tutar8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp" ></TextView>
+
+            <TextView
+                android:id="@+id/txt_sekiztaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dokuztaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dokuztaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp">
+            </Button>
+            <TextView
+                android:id="@+id/txt_tutar9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp" ></TextView>
+
+            <TextView
+                android:id="@+id/txt_dokuztaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ontaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ontaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp">
+            </Button>
+            <TextView
+                android:id="@+id/txt_tutar10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp" ></TextView>
+
+            <TextView
+                android:id="@+id/txt_ontaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_onbirtaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/onbirtaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp">
+            </Button>
+            <TextView
+                android:id="@+id/txt_tutar11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp" ></TextView>
+
+            <TextView
+                android:id="@+id/txt_onbirtaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_onikitaksit"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/onikitaksit"
+                android:background="@color/green"
+                android:layout_margin="2dp">
+            </Button>
+            <TextView
+                android:id="@+id/txt_tutar12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/txt_komisyon12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp" ></TextView>
+
+            <TextView
+                android:id="@+id/txt_onikitaksit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

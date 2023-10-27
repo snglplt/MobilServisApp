@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/design_default_color_error"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAracBilgi_kart_ac"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/aracbilgi"
+                android:textColor="#fff"
+                android:textSize="8dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnAracSahibi_kart_ac_"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sahibi"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <Button
+                android:id="@+id/btn_kabul_asamasi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kabulasmasi"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <Button
+                android:id="@+id/btn_istek_sikayet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/istek_sikayet"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <ImageView
+                android:id="@+id/btn_cikis"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/geri"
+                android:visibility="gone"></ImageView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dddddd"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ruhsat" />
+            <ImageView
+                android:id="@+id/image_ruhsat"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+            </ImageView>
+        </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KM" />
+                <ImageView
+                    android:id="@+id/image_km"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp">
+
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sagon" />
+                <ImageView
+                    android:id="@+id/image_sag_on_taraf"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp">
+
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/solon" />
+                <ImageView
+                    android:id="@+id/image_sol_on_taraf"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp">
+
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sagarka" />
+                <ImageView
+                    android:id="@+id/image_sag_arka_taraf"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp">
+
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/solarka" />
+                <ImageView
+                    android:id="@+id/image_sol_arka_taraf"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp">
+
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_mekanik_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:text="@string/ilerle"
+            android:textStyle="bold"></Button>
+    </LinearLayout>
+</ScrollView>

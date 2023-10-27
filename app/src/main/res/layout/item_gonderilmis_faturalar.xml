@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="horizontal"
+    android:orientation="vertical"
+    android:padding="5dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cariadi"
+            ></TextView>
+        <TextView
+            android:id="@+id/txt_cari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+    </LinearLayout>
+
+    <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow>
+        <TextView
+            android:id="@+id/txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            ></TextView>
+        <TextView
+            android:id="@+id/txt_fatura_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/durum"
+            ></TextView>
+        <TextView
+            android:id="@+id/txtdurum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+
+
+
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tarih"
+            ></TextView>
+        <TextView
+            android:id="@+id/txt_tarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tur"
+            android:visibility="gone"
+            ></TextView>
+        <TextView
+            android:id="@+id/txtturu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/txt_tutar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evrak_tipi"
+            android:visibility="gone"
+            ></TextView>
+        <TextView
+            android:id="@+id/txt_tipi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            ></TextView>
+
+
+
+    </TableRow>
+        <TableRow
+            android:layout_gravity="left"
+            android:gravity="left">
+            <ImageView
+                android:id="@+id/imageview_pdf"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pdf"></ImageView>
+            <ImageView
+                android:id="@+id/imageview_ice_aktar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_check_circle_outline_24">
+            </ImageView>
+            <ImageView
+                android:id="@+id/imageview_sil"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cancel"></ImageView>
+            <ImageView
+                android:id="@+id/imageview_whatssapp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/app"></ImageView>
+
+        </TableRow>
+
+</TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"></View>
+</LinearLayout>
+
+</HorizontalScrollView>

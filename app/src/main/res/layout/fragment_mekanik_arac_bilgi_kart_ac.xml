@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/design_default_color_error"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAracBilgi_kart_ac"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/aracbilgi"
+                android:textColor="#fff"
+                android:textSize="8dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnAracSahibi_kart_ac_"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sahibi"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <Button
+                android:id="@+id/btn_kabul_asamasi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kabulasmasi"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <Button
+                android:id="@+id/btn_istek_sikayet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/istek_sikayet"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <ImageView
+                android:id="@+id/btn_cikis"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/geri"
+                android:visibility="gone"></ImageView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#dddddd"
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aracturu">
+
+                    </TextView>
+                    <Spinner
+                        android:id="@+id/spinner_arac_turu"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#F0F7F7"
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/marka" />
+
+                    <Spinner
+                        android:id="@+id/spinner_marka_kart_ac"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#ddd"
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/model" />
+                    <Spinner
+                        android:id="@+id/spinner_model_kart_ac"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:background="#F0F7F7"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/modelversiyon" />
+
+                    <Spinner
+                        android:id="@+id/spinner_modelVrs_kart_ac"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#ddd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/modelyili" />
+
+                    <EditText
+                        android:id="@+id/txt_model_y_kart_ac"
+                        android:layout_width="170dp"
+                        android:maxLength="4"
+                        android:inputType="number"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#F0F7F7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yakitturu" />
+                    <Spinner
+                        android:id="@+id/spinner_yakit_turu"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></Spinner>
+
+
+                </LinearLayout>
+            </LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <ImageView
+                  android:layout_marginTop="20dp"
+                  android:id="@+id/kart_ac_image"
+                  android:layout_width="match_parent"
+                  android:layout_height="120dp"
+                  android:src="@drawable/logo_y">
+
+              </ImageView>
+              <Button
+                  android:layout_marginTop="5dp"
+                  android:id="@+id/btn_yagtablosu"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  android:text="@string/yagtablosu"
+                  android:background="@color/colorAccent">
+
+              </Button>
+              <TextView
+                  android:id="@+id/txt_yag"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/black"></TextView>
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            >
+
+            <TableRow
+                android:background="#F0F7F7">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/plakano">
+
+                </TextView>
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="-200dp"
+                    android:id="@+id/image_qr"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"></ImageView>
+                <EditText
+                    android:layout_marginLeft="-170dp"
+                    android:id="@+id/txt_plaka_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textCapCharacters"
+                    android:textAllCaps="true"
+                    android:singleLine="true"></EditText>
+            </TableRow>
+
+            <TableRow
+                android:background="#dddddd"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kasatipi" />
+
+                <Spinner
+                    android:id="@+id/spinner_kasa_tipi_kart_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+            <TableRow android:background="#F0F7F7" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KM" />
+                <EditText
+                    android:id="@+id/kmsaat_kart_ac_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:singleLine="true"/>
+
+            </TableRow>
+
+            <TableRow
+                android:background="#dddddd"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/renk" />
+
+                <Spinner
+                    android:id="@+id/spinner_renk_kart_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+            <TableRow android:background="#F0F7F7" android:padding="5dp">
+                <TextView
+                    android:id="@+id/txt_sase_karakter"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/saseno" />
+
+                <EditText
+                    android:id="@+id/txt_saseno_kart_ac_"
+                    android:maxLength="17"
+                    android:inputType="textCapCharacters"
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+
+            </TableRow>
+            <TableRow android:background="#ddd" android:padding="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/motorno" />
+                <EditText
+                    android:id="@+id/txt_motor_no_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textCapCharacters"
+                    android:textAllCaps="true"
+                    android:singleLine="true"/>
+
+            </TableRow>
+            <TableRow
+                android:visibility="gone"
+                android:background="#ddd" android:padding="5dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/dosyano" />
+                <EditText
+                    android:id="@+id/txt_dosyano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textCapCharacters"
+                    android:textAllCaps="true"
+                    android:singleLine="true"/>
+
+            </TableRow>
+
+            <TableRow
+                android:background="#F0F7F7"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/konum" />
+
+                <Spinner
+                    android:id="@+id/spinner_konum_kart_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+            <TableRow
+                android:background="#ddd"
+                android:padding="5dp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/durum" />
+                <Spinner
+                    android:id="@+id/spinner_durum_kart_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </TableRow>
+
+            <TableRow
+                android:background="#F0F7F7"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mua" />
+
+                <EditText
+                    android:id="@+id/mua_bitis_tarihi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+
+            </TableRow>
+            <TableRow
+                android:background="#ddd"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teslimtarihi" />
+
+                <EditText
+                    android:id="@+id/tahmini_teslim_tarihi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+
+            </TableRow>
+            <TableRow
+                android:background="#F0F7F7"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/egzozyaklasan" />
+
+                <EditText
+                    android:id="@+id/egzoz_bitis_tarihi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+
+            </TableRow>
+            <TableRow
+                android:background="#ddd"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trafiksigortasiyaklasan" />
+
+                <EditText
+                    android:id="@+id/trafik_sigortasi_tarihi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+
+            </TableRow>
+            <TableRow
+                android:background="#F0F7F7"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kaskosigortasiyaklasan" />
+
+                <EditText
+                    android:id="@+id/kasko_sigortasi_tarihi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+
+            </TableRow>
+
+            <TableRow
+                android:background="#ddd"
+                android:padding="5dp"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btn_arac_bilgi_ilerle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:text="@string/ilerle"></Button>
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>
